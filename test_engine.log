@@ -1,0 +1,1807 @@
+2026-04-30 22:38:16,438 - test_engine - INFO - QuestionGenerator initialized
+2026-04-30 22:38:16,438 - test_engine - INFO - ExplanationGenerator initialized
+2026-04-30 22:38:16,438 - test_engine - INFO - QuestionGenerator initialized
+2026-04-30 22:38:16,453 - test_engine - INFO - ExplanationGenerator initialized
+2026-04-30 22:38:16,453 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-04-30 22:38:16,453 - test_engine - INFO - TestWorkflowEngine initialized
+2026-04-30 22:38:24,594 - test_engine - INFO - Test started for student: Alex Student
+2026-04-30 22:38:33,019 - test_engine - INFO - Selected standard: 9
+2026-04-30 22:38:41,636 - test_engine - INFO - Selected subject: Science
+2026-04-30 22:38:49,582 - test_engine - INFO - Selected chapter: Matter in Our Surroundings
+2026-04-30 22:38:50,331 - test_engine - INFO - Chapter summary fetched
+2026-04-30 22:38:50,331 - test_engine - INFO - Generating 10 questions from summary
+2026-04-30 22:38:52,246 - test_engine - DEBUG - Raw LLM response: {
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the characteristic of particles in solids?",
+      "question_type": "mcq",
+      "options": ["Particles are tightly packed with weak forces", "Particles are far apart with strong forces", "Particles are randomly arranged with moderate forces", "Particles are loosely packed with very weak forces"],
+      "correct_answer": "Particles are tightly packed with strong forces",
+      "explanation": "This is because particles in solids are closely packed together with strong intermolecular forces, resulting in a fixed shape and volume.",
+      "difficulty": "easy",
+      "keywords": ["solids", "particles", "forces"]
+    },
+    {
+      "id": 2,
+      "question_text": "What happens when a solid changes directly to a gas?",
+      "question_type": "mcq",
+      "options": ["Melting", "Sublimation", "Condensation", "Deposition"],
+      "correct_answer": "Sublimation",
+      "explanation": "Sublimation is the process by which a solid changes directly to a gas, without going through the liquid phase.",
+      "difficulty": "easy",
+      "keywords": ["sublimation", "states of matter"]
+    },
+    {
+      "id": 3,
+      "question_text": "True or False: Gases have a fixed shape and volume.",
+      "question_type": "true_false",
+      "correct_answer": "False",
+      "explanation": "Gases do not have a fixed shape or volume because their particles are far apart with weak forces, allowing them to expand and fill any container.",
+      "difficulty": "easy",
+      "keywords": ["gases", "states of matter"]
+    },
+    {
+      "id": 4,
+      "question_text": "What is the effect of evaporation on the surrounding temperature?",
+      "question_type": "short_answer",
+      "correct_answer": "Evaporation causes cooling by taking heat from the surroundings.",
+      "explanation": "Evaporation is a process where a liquid changes to a gas, absorbing heat energy from the surroundings, resulting in cooling.",
+      "difficulty": "medium",
+      "keywords": ["evaporation", "temperature"]
+    },
+    {
+      "id": 5,
+      "question_text": "What is the term for the heat required to change the state of a substance without changing its temperature?",
+      "question_type": "mcq",
+      "options": ["Specific heat capacity", "Latent heat", "Molar mass", "Boiling point"],
+      "correct_answer": "Latent heat",
+      "explanation": "Latent heat is the energy required to change the state of a substance without changing its temperature.",
+      "difficulty": "medium",
+      "keywords": ["latent heat", "states of matter"]
+    },
+    {
+      "id": 6,
+      "question_text": "True or False: Increasing pressure can cause a solid to change directly to a gas.",
+      "question_type": "true_false",
+      "correct_answer": "False",
+      "explanation": "Increasing pressure can cause a gas to liquefy, but it cannot cause a solid to change directly to a gas.",
+      "difficulty": "hard",
+      "keywords": ["pressure", "states of matter"]
+    },
+    {
+      "id": 7,
+      "question_text": "What is the effect of wind speed on evaporation?",
+      "question_type": "short_answer",
+      "correct_answer": "Wind speed increases evaporation by increasing the rate of heat transfer from the surface to the atmosphere.",
+      "explanation": "Wind speed plays a crucial role in evaporation by increasing the rate of heat transfer from the surface to the atmosphere, resulting in increased evaporation.",
+      "difficulty": "hard",
+      "keywords": ["evaporation", "wind speed"]
+    },
+    {
+      "id": 8,
+      "question_text": "What is the term for the process by which a gas changes directly to a solid?",
+      "question_type": "mcq",
+      "options": ["Sublimation", "Deposition", "Condensation", "Evaporation"],
+      "correct_answer": "Deposition",
+      "explanation": "Deposition is the process by which a gas changes directly to a solid, such as frost or snow.",
+      "difficulty": "hard",
+      "keywords": ["deposition", "states of matter"]
+    },
+    {
+      "id": 9,
+      "question_text": "True or False: The temperature of a substance remains constant during the process of sublimation.",
+      "question_type": "true_false",
+      "correct_answer": "True",
+      "explanation": "Sublimation is a process where a solid changes directly to a gas, without changing its temperature.",
+      "difficulty": "hard",
+      "keywords": ["sublimation", "temperature"]
+    },
+    {
+      "id": 10,
+      "question_text": "What is the term for the heat energy required to change the state of a substance from a solid to a gas?",
+      "question_type": "mcq",
+      "options": ["Latent heat of fusion", "Latent heat of vaporization", "Specific heat capacity", "Molar mass"],
+      "correct_answer": "Latent heat of vaporization",
+      "explanation": "Latent heat of vaporization is the energy required to change the state of a substance from a solid to a gas.",
+      "difficulty": "hard",
+      "keywords": ["laten heat", "states of matter"]
+    }
+  ]
+}
+2026-04-30 22:38:52,247 - test_engine - WARNING - Attempt 1 failed, retrying in 2.0s: 'options'
+2026-04-30 22:38:54,247 - test_engine - INFO - Generating 10 questions from summary
+2026-04-30 22:38:55,135 - test_engine - DEBUG - Raw LLM response: {
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is matter?",
+      "question_type": "mcq",
+      "options": ["A substance that can be divided into smaller parts", "A substance with mass and occupying space", "A substance with only mass and no space", "A substance with only space and no mass"],
+      "correct_answer": "B",
+      "explanation": "Matter is defined as a substance with mass and occupying space.",
+      "difficulty": "easy",
+      "keywords": ["matter", "mass", "space"]
+    },
+    {
+      "id": 2,
+      "question_text": "True or False: Solids have fixed shape and volume because particles are loosely packed with weak forces.",
+      "question_type": "true_false",
+      "correct_answer": "False",
+      "explanation": "Solids have fixed shape and volume because particles are tightly packed with strong forces.",
+      "difficulty": "medium",
+      "keywords": ["solids", "forces"]
+    },
+    {
+      "id": 3,
+      "question_text": "What is the process of changing a solid directly to a gas?",
+      "question_type": "short_answer",
+      "answer": "Sublimation",
+      "explanation": "Sublimation is the process of changing a solid directly to a gas.",
+      "difficulty": "hard",
+      "keywords": ["sublimation", "states_of_matter"]
+    },
+    {
+      "id": 4,
+      "question_text": "Which of the following is a state of matter?",
+      "question_type": "mcq",
+      "options": ["Solid", "Liquid", "Gas", "All of the above"],
+      "correct_answer": "D",
+      "explanation": "All three - solid, liquid, and gas - are states of matter.",
+      "difficulty": "easy",
+      "keywords": ["states_of_matter"]
+    },
+    {
+      "id": 5,
+      "question_text": "True or False: Evaporation causes heating by releasing heat to the surroundings.",
+      "question_type": "true_false",
+      "correct_answer": "False",
+      "explanation": "Evaporation causes cooling by taking heat from the surroundings.",
+      "difficulty": "medium",
+      "keywords": ["evaporation", "cooling"]
+    },
+    {
+      "id": 6,
+      "question_text": "What is the term for the heat required to change the state of a substance without changing its temperature?",
+      "question_type": "mcq",
+      "options": ["Latent heat", "Specific heat", "Molar heat", "Thermal energy"],
+      "correct_answer": "A",
+      "explanation": "Latent heat is the heat required to change the state of a substance without changing its temperature.",
+      "difficulty": "hard",
+      "keywords": ["latent_heat", "states_of_matter"]
+    },
+    {
+      "id": 7,
+      "question_text": "Which of the following is an example of sublimation?",
+      "question_type": "mcq",
+      "options": ["Evaporation of water", "Freezing of ice", "Sublimation of camphor", "Condensation of steam"],
+      "correct_answer": "C",
+      "explanation": "Sublimation of camphor is an example of sublimation.",
+      "difficulty": "medium",
+      "keywords": ["sublimation", "camphor"]
+    },
+    {
+      "id": 8,
+      "question_text": "True or False: Increasing pressure can liquefy solids.",
+      "question_type": "true_false",
+      "correct_answer": "False",
+      "explanation": "Increasing pressure can liquefy gases, but not solids.",
+      "difficulty": "easy",
+      "keywords": ["pressure", "states_of_matter"]
+    },
+    {
+      "id": 9,
+      "question_text": "What is the process of changing a gas directly to a solid?",
+      "question_type": "short_answer",
+      "answer": "Deposition",
+      "explanation": "Deposition is the process of changing a gas directly to a solid.",
+      "difficulty": "hard",
+      "keywords": ["deposition", "states_of_matter"]
+    },
+    {
+      "id": 10,
+      "question_text": "Which of the following is a reason for evaporation?",
+      "question_type": "mcq",
+      "options": ["High temperature", "Low temperature", "High humidity", "Temperature, surface area, humidity, and wind speed"],
+      "correct_answer": "D",
+      "explanation": "Evaporation depends on temperature, surface area, humidity, and wind speed.",
+      "difficulty": "medium",
+      "keywords": ["evaporation", "factors"]
+    }
+  ]
+}
+2026-04-30 22:38:55,135 - test_engine - WARNING - Attempt 2 failed, retrying in 4.0s: 'options'
+2026-04-30 22:38:59,136 - test_engine - INFO - Generating 10 questions from summary
+2026-04-30 22:39:00,043 - test_engine - DEBUG - Raw LLM response: {
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the fundamental characteristic of matter?",
+      "question_type": "mcq",
+      "options": ["Mass and charge", "Mass and volume", "Mass and occupies space", "None of the above"],
+      "correct_answer": "Mass and occupies space",
+      "explanation": "Matter is anything with mass and occupies space, as per the definition.",
+      "difficulty": "easy",
+      "keywords": ["mass", "space"]
+    },
+    {
+      "id": 2,
+      "question_text": "True or False: Particles in a solid are far apart with weak forces.",
+      "question_type": "truefalse",
+      "correct_answer": false,
+      "explanation": "Particles in a solid are tightly packed with strong forces.",
+      "difficulty": "easy",
+      "keywords": ["solid", "forces"]
+    },
+    {
+      "id": 3,
+      "question_text": "What is the state of matter where particles have no fixed shape or volume?",
+      "question_type": "mcq",
+      "options": ["Liquid", "Gas", "Solid", "None of the above"],
+      "correct_answer": "Gas",
+      "explanation": "Gases have no fixed shape or volume because particles are far apart with very weak forces.",
+      "difficulty": "easy",
+      "keywords": ["gas", "shape", "volume"]
+    },
+    {
+      "id": 4,
+      "question_text": "How does increasing pressure affect gases?",
+      "question_type": "mcq",
+      "options": ["No effect", "Increases temperature", "Decreases temperature", "Liquefies gases"],
+      "correct_answer": "Liquefies gases",
+      "explanation": "Increasing pressure can liquefy gases as in LPG cylinders.",
+      "difficulty": "medium",
+      "keywords": ["pressure", "gases"]
+    },
+    {
+      "id": 5,
+      "question_text": "What is the process of changing solid directly to gas?",
+      "question_type": "mcq",
+      "options": ["Melting", "Boiling", "Condensation", "Sublimation"],
+      "correct_answer": "Sublimation",
+      "explanation": "Sublimation changes solid directly to gas (camphor, dry ice).",
+      "difficulty": "medium",
+      "keywords": ["sublimation", "solid", "gas"]
+    },
+    {
+      "id": 6,
+      "question_text": "Describe the process of evaporation and its effect on surroundings.",
+      "question_type": "shortanswer",
+      "correct_answer": "Evaporation is the process of changing liquid to gas at any temperature only at the surface, depending on temperature, surface area, humidity, and wind speed. It causes cooling by taking heat from surroundings, seen in sweating and earthen pots.",
+      "explanation": "Evaporation is a process of changing liquid to gas, which causes cooling by taking heat from surroundings.",
+      "difficulty": "hard",
+      "keywords": ["evaporation", "cooling", "surroundings"]
+    },
+    {
+      "id": 7,
+      "question_text": "True or False: Particles in a liquid are tightly packed with strong forces.",
+      "question_type": "truefalse",
+      "correct_answer": false,
+      "explanation": "Particles in a liquid have larger spaces and weaker forces.",
+      "difficulty": "medium",
+      "keywords": ["liquid", "forces"]
+    },
+    {
+      "id": 8,
+      "question_text": "What is the term for heat required to change state without changing temperature?",
+      "question_type": "mcq",
+      "options": ["Latent heat", "Specific heat", "Molar heat", "None of the above"],
+      "correct_answer": "Latent heat",
+      "explanation": "Latent heat is heat required to change state without changing temperature.",
+      "difficulty": "easy",
+      "keywords": ["latent heat", "temperature"]
+    },
+    {
+      "id": 9,
+      "question_text": "What is the process of changing gas directly to solid?",
+      "question_type": "mcq",
+      "options": ["Condensation", "Freezing", "Deposition", "Sublimation"],
+      "correct_answer": "Deposition",
+      "explanation": "Deposition changes gas directly to solid (frost, snow).",
+      "difficulty": "medium",
+      "keywords": ["deposition", "gas", "solid"]
+    },
+    {
+      "id": 10,
+      "question_text": "How does the surface area of a liquid affect evaporation?",
+      "question_type": "mcq",
+      "options": ["Increases evaporation", "Decreases evaporation", "No effect on evaporation", "Increases temperature"],
+      "correct_answer": "Increases evaporation",
+      "explanation": "Evaporation depends on temperature, surface area, humidity, and wind speed.",
+      "difficulty": "medium",
+      "keywords": ["evaporation", "surface area"]
+    }
+  ]
+}
+2026-04-30 22:39:00,044 - test_engine - ERROR - Failed after 3 attempts: 'truefalse' is not a valid QuestionType
+2026-04-30 22:39:00,044 - test_engine - ERROR - Error in test flow: 'truefalse' is not a valid QuestionType
+Traceback (most recent call last):
+  File "D:\Child-Friendly AI Mentor\test.py", line 310, in run
+    questions = question_generator.generate_test_json(summary, num_questions=10)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Child-Friendly AI Mentor\test_engine.py", line 62, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Child-Friendly AI Mentor\test_engine.py", line 200, in generate_test_json
+    questions = self._parse_questions(response_text)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Child-Friendly AI Mentor\test_engine.py", line 258, in _parse_questions
+    question_type=QuestionType(q_data["question_type"]),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADIBA SARESHWALA\AppData\Local\Python\pythoncore-3.11-64\Lib\enum.py", line 714, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADIBA SARESHWALA\AppData\Local\Python\pythoncore-3.11-64\Lib\enum.py", line 1137, in __new__
+    raise ve_exc
+ValueError: 'truefalse' is not a valid QuestionType
+2026-04-30 22:39:36,214 - test_engine - INFO - QuestionGenerator initialized
+2026-04-30 22:39:36,215 - test_engine - INFO - ExplanationGenerator initialized
+2026-04-30 22:39:36,215 - test_engine - INFO - QuestionGenerator initialized
+2026-04-30 22:39:36,215 - test_engine - INFO - ExplanationGenerator initialized
+2026-04-30 22:39:36,215 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-04-30 22:39:36,219 - test_engine - INFO - TestWorkflowEngine initialized
+2026-04-30 22:39:39,664 - test_engine - INFO - Test started for student: Alex Student
+2026-04-30 22:39:45,107 - test_engine - INFO - Selected standard: 9
+2026-04-30 22:39:48,870 - test_engine - INFO - Selected subject: Science
+2026-04-30 22:39:54,404 - test_engine - INFO - Selected chapter: Matter in Our Surroundings
+2026-04-30 22:39:55,350 - test_engine - INFO - Chapter summary fetched
+2026-04-30 22:39:55,351 - test_engine - INFO - Generating 10 questions from summary
+2026-04-30 22:39:56,405 - test_engine - DEBUG - Raw LLM response: {
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is a characteristic of solids?",
+      "question_type": "mcq",
+      "options": ["Particles are tightly packed with strong forces", "Particles slide past each other with larger spaces and weaker forces", "Particles are far apart with very weak forces", "Particles have a fixed shape and volume"],
+      "correct_answer": "Particles are tightly packed with strong forces",
+      "explanation": "Solids have fixed shape and volume because particles are tightly packed with strong forces.",
+      "difficulty": "easy",
+      "keywords": ["solids", "states of matter"]
+    },
+    {
+      "id": 2,
+      "question_text": "A true statement about sublimation?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Sublimation is a process where a solid directly changes to a gas.",
+      "difficulty": "medium",
+      "keywords": ["sublimation", "states of matter"]
+    },
+    {
+      "id": 3,
+      "question_text": "What is the process of a liquid changing to a solid?",
+      "question_type": "short_answer",
+      "difficulty": "medium",
+      "keywords": ["states of matter", "freezing"]
+    },
+    {
+      "id": 4,
+      "question_text": "Which of the following is a characteristic of gases?",
+      "question_type": "mcq",
+      "options": ["Particles are tightly packed with strong forces", "Particles slide past each other with larger spaces and weaker forces", "Particles are far apart with very weak forces", "Particles have a fixed shape and volume"],
+      "correct_answer": "Particles are far apart with very weak forces",
+      "explanation": "Gases have no fixed shape or volume because particles are far apart with very weak forces.",
+      "difficulty": "easy",
+      "keywords": ["gases", "states of matter"]
+    },
+    {
+      "id": 5,
+      "question_text": "What is the term for the heat required to change state without changing temperature?",
+      "question_type": "mcq",
+      "options": ["Latent heat", "Specific heat", "Sensible heat", "Thermal energy"],
+      "correct_answer": "Latent heat",
+      "explanation": "Latent heat is heat required to change state without changing temperature.",
+      "difficulty": "hard",
+      "keywords": ["latent heat", "states of matter"]
+    },
+    {
+      "id": 6,
+      "question_text": "Is it true that evaporation causes cooling?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Evaporation causes cooling by taking heat from surroundings.",
+      "difficulty": "easy",
+      "keywords": ["evaporation", "cooling"]
+    },
+    {
+      "id": 7,
+      "question_text": "What is the process of a gas changing to a liquid?",
+      "question_type": "short_answer",
+      "difficulty": "medium",
+      "keywords": ["states of matter", "condensation"]
+    },
+    {
+      "id": 8,
+      "question_text": "Which of the following is a characteristic of liquids?",
+      "question_type": "mcq",
+      "options": ["Particles are tightly packed with strong forces", "Particles slide past each other with larger spaces and weaker forces", "Particles are far apart with very weak forces", "Particles have a fixed shape and volume"],
+      "correct_answer": "Particles slide past each other with larger spaces and weaker forces",
+      "explanation": "Liquids have fixed volume but no fixed shape because particles slide past each other with larger spaces and weaker forces.",
+      "difficulty": "easy",
+      "keywords": ["liquids", "states of matter"]
+    },
+    {
+      "id": 9,
+      "question_text": "Is it true that increasing pressure can liquefy gases?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Increasing pressure can liquefy gases as in LPG cylinders.",
+      "difficulty": "medium",
+      "keywords": ["gases", "pressure"]
+    },
+    {
+      "id": 10,
+      "question_text": "What is the process of a liquid changing to a gas at any temperature only at the surface?",
+      "question_type": "short_answer",
+      "difficulty": "hard",
+      "keywords": ["states of matter", "evaporation"]
+    }
+  ]
+}
+2026-04-30 22:39:56,405 - test_engine - WARNING - Attempt 1 failed, retrying in 2.0s: 'options'
+2026-04-30 22:39:58,406 - test_engine - INFO - Generating 10 questions from summary
+2026-04-30 22:39:59,237 - test_engine - DEBUG - Raw LLM response: {
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the definition of matter?",
+      "question_type": "mcq",
+      "options": ["Anything with mass and occupies space", "Anything with no mass and occupies space", "Anything with no mass and no space", "Anything with mass and no space"],
+      "correct_answer": "Anything with mass and occupies space",
+      "explanation": "Matter is defined as anything that has mass and occupies space. This is the fundamental concept of matter.",
+      "difficulty": "easy",
+      "keywords": ["matter", "mass", "space"]
+    },
+    {
+      "id": 2,
+      "question_text": "True or False: Solids have no fixed shape or volume?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "False",
+      "explanation": "This is false because solids have both fixed shape and volume due to tightly packed particles with strong forces.",
+      "difficulty": "medium",
+      "keywords": ["solids", "shape", "volume"]
+    },
+    {
+      "id": 3,
+      "question_text": "What is the process of changing state from solid to liquid called?",
+      "question_type": "mcq",
+      "options": ["Melting", "Boiling", "Condensation", "Freezing"],
+      "correct_answer": "Melting",
+      "explanation": "Melting is the process of changing state from solid to liquid by adding heat.",
+      "difficulty": "easy",
+      "keywords": ["melting", "solid", "liquid"]
+    },
+    {
+      "id": 4,
+      "question_text": "True or False: Latent heat is the heat required to change temperature?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "False",
+      "explanation": "This is false because latent heat is the heat required to change state without changing temperature.",
+      "difficulty": "medium",
+      "keywords": ["latent heat", "temperature", "state"]
+    },
+    {
+      "id": 5,
+      "question_text": "What is the process of changing state from liquid to gas called?",
+      "question_type": "mcq",
+      "options": ["Melting", "Boiling", "Condensation", "Evaporation"],
+      "correct_answer": "Boiling",
+      "explanation": "Boiling is the process of changing state from liquid to gas by adding heat.",
+      "difficulty": "easy",
+      "keywords": ["boiling", "liquid", "gas"]
+    },
+    {
+      "id": 6,
+      "question_text": "What is sublimation?",
+      "question_type": "short_answer",
+      "answer": "Sublimation is the process of changing state directly from solid to gas.",
+      "difficulty": "hard",
+      "keywords": ["sublimation", "solid", "gas"]
+    },
+    {
+      "id": 7,
+      "question_text": "True or False: Increasing pressure can liquefy gases?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "This is true because increasing pressure can liquefy gases as in LPG cylinders.",
+      "difficulty": "medium",
+      "keywords": ["pressure", "gases", "liquefy"]
+    },
+    {
+      "id": 8,
+      "question_text": "What is the process of changing state from liquid to gas at the surface called?",
+      "question_type": "mcq",
+      "options": ["Evaporation", "Condensation", "Melting", "Boiling"],
+      "correct_answer": "Evaporation",
+      "explanation": "Evaporation is the process of changing state from liquid to gas at the surface.",
+      "difficulty": "easy",
+      "keywords": ["evaporation", "liquid", "gas"]
+    },
+    {
+      "id": 9,
+      "question_text": "What is the effect of evaporation on the surroundings?",
+      "question_type": "short_answer",
+      "answer": "Evaporation causes cooling by taking heat from the surroundings.",
+      "difficulty": "hard",
+      "keywords": ["evaporation", "cooling", "surroundings"]
+    },
+    {
+      "id": 10,
+      "question_text": "True or False: Deposition changes gas directly to liquid?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "False",
+      "explanation": "This is false because deposition changes gas directly to solid.",
+      "difficulty": "medium",
+      "keywords": ["deposition", "gas", "liquid"]
+    }
+  ]
+}
+2026-04-30 22:39:59,237 - test_engine - WARNING - Attempt 2 failed, retrying in 4.0s: 'options'
+2026-04-30 22:40:03,240 - test_engine - INFO - Generating 10 questions from summary
+2026-04-30 22:40:04,070 - test_engine - DEBUG - Raw LLM response: {
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the fundamental characteristic of matter?",
+      "question_type": "mcq",
+      "options": ["Having a fixed shape", "Being invisible", "Having mass and occupying space", "Being a gas"],
+      "correct_answer": "Having mass and occupying space",
+      "explanation": "Matter is anything with mass and occupies space, which is defined in chapter 1.",
+      "difficulty": "easy",
+      "keywords": ["matter", "mass"]
+    },
+    {
+      "id": 2,
+      "question_text": "Is it true that solid particles are tightly packed with strong forces?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Solids have fixed shape and volume because particles are tightly packed with strong forces, which is explained in chapter 1.",
+      "difficulty": "medium",
+      "keywords": ["solids", "particles"]
+    },
+    {
+      "id": 3,
+      "question_text": "Why do gases have no fixed shape or volume?",
+      "question_type": "short_answer",
+      "difficulty": "hard",
+      "keywords": ["gases", "particles"]
+    },
+    {
+      "id": 4,
+      "question_text": "What is the process of changing solid directly to gas called?",
+      "question_type": "mcq",
+      "options": ["Sublimation", "Deposition", "Melting", "Boiling"],
+      "correct_answer": "Sublimation",
+      "explanation": "Sublimation is the process of changing solid directly to gas, which is explained in chapter 1.",
+      "difficulty": "easy",
+      "keywords": ["sublimation", "solid"]
+    },
+    {
+      "id": 5,
+      "question_text": "Is it true that increasing pressure can liquefy gases?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Increasing pressure can liquefy gases, which is mentioned in chapter 1.",
+      "difficulty": "medium",
+      "keywords": ["gases", "pressure"]
+    },
+    {
+      "id": 6,
+      "question_text": "What is the heat required to change state without changing temperature called?",
+      "question_type": "mcq",
+      "options": ["Latent heat", "Specific heat", "Molar heat", "Heat of vaporization"],
+      "correct_answer": "Latent heat",
+      "explanation": "Latent heat is the heat required to change state without changing temperature, which is explained in chapter 1.",
+      "difficulty": "easy",
+      "keywords": ["latent heat", "temperature"]
+    },
+    {
+      "id": 7,
+      "question_text": "What causes evaporation to cool the surroundings?",
+      "question_type": "short_answer",
+      "difficulty": "hard",
+      "keywords": ["evaporation", "cooling"]
+    },
+    {
+      "id": 8,
+      "question_text": "What are the three states of matter?",
+      "question_type": "mcq",
+      "options": ["Solid, liquid, and gas", "Solid, liquid, and plasma", "Liquid, gas, and plasma", "Solid, liquid, and liquid"],
+      "correct_answer": "Solid, liquid, and gas",
+      "explanation": "The three states of matter are solid, liquid, and gas, which are explained in chapter 1.",
+      "difficulty": "easy",
+      "keywords": ["states of matter"]
+    },
+    {
+      "id": 9,
+      "question_text": "Is it true that particles in a gas are far apart with very weak forces?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "Particles in a gas are far apart with very weak forces, which is mentioned in chapter 1.",
+      "difficulty": "medium",
+      "keywords": ["gases", "forces"]
+    },
+    {
+      "id": 10,
+      "question_text": "What is the process of changing gas directly to solid called?",
+      "question_type": "mcq",
+      "options": ["Condensation", "Deposition", "Sublimation", "Evaporation"],
+      "correct_answer": "Deposition",
+      "explanation": "Deposition is the process of changing gas directly to solid, which is explained in chapter 1.",
+      "difficulty": "easy",
+      "keywords": ["deposition", "gas"]
+    }
+  ]
+}
+2026-04-30 22:40:04,070 - test_engine - ERROR - Failed after 3 attempts: 'options'
+2026-04-30 22:40:04,070 - test_engine - ERROR - Error in test flow: 'options'
+Traceback (most recent call last):
+  File "D:\Child-Friendly AI Mentor\test.py", line 310, in run
+    questions = question_generator.generate_test_json(summary, num_questions=10)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Child-Friendly AI Mentor\test_engine.py", line 62, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Child-Friendly AI Mentor\test_engine.py", line 200, in generate_test_json
+    questions = self._parse_questions(response_text)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Child-Friendly AI Mentor\test_engine.py", line 280, in _parse_questions
+    options=q_data["options"],
+            ~~~~~~^^^^^^^^^^^
+KeyError: 'options'
+2026-04-30 22:40:53,120 - test_engine - INFO - QuestionGenerator initialized
+2026-04-30 22:40:53,121 - test_engine - INFO - ExplanationGenerator initialized
+2026-04-30 22:40:53,121 - test_engine - INFO - QuestionGenerator initialized
+2026-04-30 22:40:53,121 - test_engine - INFO - ExplanationGenerator initialized
+2026-04-30 22:40:53,121 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-04-30 22:40:53,124 - test_engine - INFO - TestWorkflowEngine initialized
+2026-04-30 22:40:56,743 - test_engine - INFO - Test started for student: John Doe
+2026-04-30 22:41:01,034 - test_engine - INFO - Selected standard: 9
+2026-04-30 22:41:05,346 - test_engine - INFO - Selected subject: Science
+2026-04-30 22:41:08,637 - test_engine - INFO - Selected chapter: Matter in Our Surroundings
+2026-04-30 22:41:08,755 - test_engine - INFO - Chapter summary fetched
+2026-04-30 22:41:08,756 - test_engine - INFO - Generating 5 questions from summary
+2026-04-30 22:41:09,679 - test_engine - DEBUG - Raw LLM response: {
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the definition of matter?",
+      "question_type": "short_answer",
+      "options": [],
+      "correct_answer": "Anything with mass and occupies space",
+      "explanation": "Matter is defined as anything that has mass and occupies space. It is made up of tiny moving particles with spaces between them and forces of attraction.",
+      "difficulty": "easy",
+      "keywords": ["matter", "mass", "space"]
+    },
+    {
+      "id": 2,
+      "question_text": "What is the characteristic of particles in a solid?",
+      "question_type": "mcq",
+      "options": ["Are far apart", "Are loosely packed", "Are tightly packed", "Are vibrating rapidly"],
+      "correct_answer": "Are tightly packed",
+      "explanation": "In a solid, particles are tightly packed together with strong forces between them, giving it a fixed shape and volume.",
+      "difficulty": "medium",
+      "keywords": ["solids", "particles", "forces"]
+    },
+    {
+      "id": 3,
+      "question_text": "What is sublimation?",
+      "question_type": "mcq",
+      "options": ["Changing solid to liquid", "Changing liquid to gas", "Changing gas to liquid", "Changing solid directly to gas"],
+      "correct_answer": "Changing solid directly to gas",
+      "explanation": "Sublimation is the process where a solid changes directly to a gas without going through the liquid phase.",
+      "difficulty": "hard",
+      "keywords": ["sublimation", "solids", "gases"]
+    },
+    {
+      "id": 4,
+      "question_text": "Is all matter made of tiny moving particles with spaces between them and forces of attraction?",
+      "question_type": "true_false",
+      "options": ["True", "False"],
+      "correct_answer": "True",
+      "explanation": "According to the definition of matter, it is indeed made up of tiny moving particles with spaces between them and forces of attraction.",
+      "difficulty": "easy",
+      "keywords": ["matter", "particles", "forces"]
+    },
+    {
+      "id": 5,
+      "question_text": "What is the process of changing from liquid to gas called?",
+      "question_type": "mcq",
+      "options": ["Evaporation", "Condensation", "Boiling", "Melting"],
+      "correct_answer": "Boiling",
+      "explanation": "Boiling is the process where a liquid changes to a gas due to the addition of heat.",
+      "difficulty": "medium",
+      "keywords": ["boiling", "liquids", "gases"]
+    }
+  ]
+}
+2026-04-30 22:41:09,679 - test_engine - INFO - Successfully generated 5 questions
+2026-04-30 22:41:09,679 - test_engine - INFO - Generated 5 questions
+2026-04-30 22:41:09,686 - test_engine - INFO - Exported 5 questions to questions_Matter in Our Surroundings.json
+2026-04-30 22:41:20,816 - test_engine - INFO - Question 1 answered with: Matter is anything that has mass and occupies space.
+2026-04-30 22:41:24,212 - test_engine - INFO - Question 2 answered with: Are tightly packed
+2026-04-30 22:41:27,822 - test_engine - INFO - Question 3 answered with: Changing gas to liquid
+2026-04-30 22:41:32,891 - test_engine - INFO - Question 4 answered with: True
+2026-04-30 22:41:37,884 - test_engine - INFO - Question 5 answered with: Evaporation
+2026-04-30 22:41:37,884 - test_engine - DEBUG - Calling verify_answer with args: ('Matter is anything that has mass and occupies space.', 'Anything with mass and occupies space', <QuestionType.SHORT_ANSWER: 'short_answer'>), kwargs: {}
+2026-04-30 22:41:37,884 - test_engine - DEBUG - Verifying: 'matter is anything that has mass and occupies space.' vs 'anything with mass and occupies space'
+2026-04-30 22:41:37,884 - test_engine - INFO - Generating feedback for wrong answer
+2026-04-30 22:41:39,415 - test_engine - DEBUG - Generated feedback: Your answer is very close, but the correct answer is actually "Anything with mass and occupies space". The reason is that we don't need the word "has" in this definition. It's like saying "the book is on the table" - we don't need to say "the book has" in order to make the sentence true. By keeping it simple, we can easily understand what matter is.
+2026-04-30 22:41:39,415 - test_engine - DEBUG - Calling verify_answer with args: ('Are tightly packed', 'Are tightly packed', <QuestionType.MCQ: 'mcq'>), kwargs: {}
+2026-04-30 22:41:39,415 - test_engine - DEBUG - Verifying: 'are tightly packed' vs 'are tightly packed'
+2026-04-30 22:41:39,415 - test_engine - DEBUG - Calling verify_answer with args: ('Changing gas to liquid', 'Changing solid directly to gas', <QuestionType.MCQ: 'mcq'>), kwargs: {}
+2026-04-30 22:41:39,415 - test_engine - DEBUG - Verifying: 'changing gas to liquid' vs 'changing solid directly to gas'
+2026-04-30 22:41:39,415 - test_engine - INFO - Generating feedback for wrong answer
+2026-04-30 22:41:41,850 - test_engine - DEBUG - Generated feedback: Don't worry, it's a common mistake. The reason your answer is incorrect is that sublimation involves a change from solid directly to gas, not from gas to liquid. Think of it like ice turning straight into vapor on a hot summer day - it skips the liquid phase and goes straight to gas.
+2026-04-30 22:41:41,854 - test_engine - DEBUG - Calling verify_answer with args: ('True', 'True', <QuestionType.TRUE_FALSE: 'true_false'>), kwargs: {}
+2026-04-30 22:41:41,854 - test_engine - DEBUG - Verifying: 'true' vs 'true'
+2026-04-30 22:41:41,855 - test_engine - DEBUG - Calling verify_answer with args: ('Evaporation', 'Boiling', <QuestionType.MCQ: 'mcq'>), kwargs: {}
+2026-04-30 22:41:41,855 - test_engine - DEBUG - Verifying: 'evaporation' vs 'boiling'
+2026-04-30 22:41:41,855 - test_engine - INFO - Generating feedback for wrong answer
+2026-04-30 22:41:42,383 - test_engine - DEBUG - Generated feedback: Don't worry, it's okay to make mistakes. The student answered "Evaporation" because it's a process where a liquid changes to a gas, but it usually happens slowly and at room temperature, without adding much heat. Boiling, on the other hand, is a specific process where a liquid rapidly changes to a gas due to the addition of heat, making it the correct answer in this case.
+2026-04-30 22:41:42,383 - test_engine - INFO - Generating report for student: John Doe
+2026-04-30 22:41:42,383 - test_engine - INFO - Report generated: 40.0% score
+2026-04-30 22:41:42,390 - test_engine - INFO - Report exported to test_report_John Doe_20260430_224142.json
+2026-04-30 22:41:42,390 - test_engine - INFO - Test completed for John Doe. Score: 40.0%
+2026-04-30 22:45:35,330 - test_engine - INFO - QuestionGenerator initialized
+2026-04-30 22:45:35,330 - test_engine - INFO - ExplanationGenerator initialized
+2026-04-30 22:45:35,330 - test_engine - INFO - QuestionGenerator initialized
+2026-04-30 22:45:35,330 - test_engine - INFO - ExplanationGenerator initialized
+2026-04-30 22:45:35,330 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-04-30 22:45:35,345 - test_engine - INFO - TestWorkflowEngine initialized
+2026-04-30 22:45:41,542 - test_engine - INFO - Test started for student: adibbba
+2026-04-30 22:45:44,858 - test_engine - INFO - Selected standard: 10
+2026-04-30 22:45:49,089 - test_engine - INFO - Selected subject: Mathematics
+2026-04-30 22:45:52,328 - test_engine - INFO - Selected chapter: Polynomials
+2026-04-30 22:45:52,532 - test_engine - INFO - Chapter summary fetched
+2026-04-30 22:45:52,532 - test_engine - INFO - Generating 5 questions from summary
+2026-04-30 22:45:53,440 - test_engine - INFO - Successfully generated 5 questions
+2026-04-30 22:45:53,440 - test_engine - INFO - Generated 5 FRESH questions in real-time
+2026-04-30 22:45:53,444 - test_engine - INFO - Exported 5 questions to questions_Polynomials.json
+2026-04-30 22:46:08,774 - test_engine - INFO - Question 1 answered with: One
+2026-04-30 22:46:19,771 - test_engine - INFO - Question 2 answered with: Sum of zeroes is -b/a
+2026-04-30 22:46:44,195 - test_engine - INFO - Question 3 answered with: its an algorith were we divide the numbers an
+2026-04-30 22:46:47,635 - test_engine - INFO - Question 4 answered with: True
+2026-04-30 22:46:51,075 - test_engine - INFO - Question 5 answered with: True
+2026-04-30 22:46:51,075 - test_engine - DEBUG - Calling verify_answer with args: ('One', 'One', <QuestionType.MCQ: 'mcq'>), kwargs: {}
+2026-04-30 22:46:51,075 - test_engine - DEBUG - Verifying: 'one' vs 'one'
+2026-04-30 22:46:51,075 - test_engine - DEBUG - Calling verify_answer with args: ('Sum of zeroes is -b/a', 'Sum of zeroes is -b/a', <QuestionType.MCQ: 'mcq'>), kwargs: {}
+2026-04-30 22:46:51,075 - test_engine - DEBUG - Verifying: 'sum of zeroes is -b/a' vs 'sum of zeroes is -b/a'
+2026-04-30 22:46:51,088 - test_engine - INFO - Generating feedback for wrong answer
+2026-04-30 22:46:51,666 - test_engine - DEBUG - Generated feedback: I can see you're close to understanding the Division Algorithm. The reason your answer isn't quite right is that it's more specific to simple numbers, whereas the Division Algorithm is about dividing polynomials, which are like expressions with variables and numbers. The correct answer explains how we can divide polynomials into a quotient and a remainder, which is really useful in algebra.
+2026-04-30 22:46:51,666 - test_engine - DEBUG - Calling verify_answer with args: ('True', 'False', <QuestionType.TRUE_FALSE: 'true_false'>), kwargs: {}
+2026-04-30 22:46:51,666 - test_engine - DEBUG - Verifying: 'true' vs 'false'
+2026-04-30 22:46:51,666 - test_engine - DEBUG - Calling verify_answer with args: ('True', 'True', <QuestionType.TRUE_FALSE: 'true_false'>), kwargs: {}
+2026-04-30 22:46:51,666 - test_engine - DEBUG - Verifying: 'true' vs 'true'
+2026-04-30 22:46:51,666 - test_engine - INFO - Generating report for student: adibbba
+2026-04-30 22:46:51,666 - test_engine - INFO - Report generated: 80.0% score
+2026-04-30 22:46:51,682 - test_engine - INFO - Report exported to test_report_adibbba_20260430_224651.json
+2026-04-30 22:46:51,682 - test_engine - INFO - Test completed for adibbba. Score: 80.0%
+2026-04-30 22:50:27,953 - test_engine - INFO - QuestionGenerator initialized
+2026-04-30 22:50:27,953 - test_engine - INFO - ExplanationGenerator initialized
+2026-04-30 22:50:27,954 - test_engine - INFO - QuestionGenerator initialized
+2026-04-30 22:50:27,954 - test_engine - INFO - ExplanationGenerator initialized
+2026-04-30 22:50:27,955 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-04-30 22:50:27,957 - test_engine - INFO - TestWorkflowEngine initialized
+2026-04-30 22:50:29,176 - test_engine - WARNING - Test interrupted by user
+2026-05-01 18:56:40,065 - test_engine - INFO - QuestionGenerator initialized
+2026-05-01 18:56:40,070 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-01 18:56:40,070 - test_engine - INFO - QuestionGenerator initialized
+2026-05-01 18:56:40,070 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-01 18:56:40,070 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-05-01 18:56:40,076 - test_engine - INFO - TestWorkflowEngine initialized
+2026-05-01 18:56:46,905 - test_engine - INFO - Test started for student: adil
+2026-05-01 18:56:59,262 - test_engine - INFO - Selected standard: 10
+2026-05-01 18:57:01,996 - test_engine - INFO - Selected subject: Social Science
+2026-05-01 18:57:03,955 - test_engine - INFO - Selected chapter: Nationalism in India
+2026-05-01 18:57:04,076 - test_engine - INFO - Chapter summary fetched
+2026-05-01 18:57:04,076 - test_engine - INFO - Generating 5 questions from summary
+2026-05-01 18:57:05,172 - test_engine - DEBUG - Raw LLM response: {
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What was the outcome of the First War of Independence (1857)?",
+      "question_type": "mcq",
+      "options": ["Immediate independence", "Failed rebellion", "Long-term British rule", "Increased nationalism"],
+      "correct_answer": "Failed rebellion",
+      "explanation": "The First War of Independence was a major uprising that failed but inspired future nationalists.",
+      "difficulty": "medium",
+      "keywords": ["First War of Independence", "Indian nationalism"]
+    },
+    {
+      "id": 2,
+      "question_text": "What was the purpose of the Swadeshi Movement?",
+      "question_type": "short_answer",
+      "options": [],
+      "correct_answer": "Boycott of British goods and use of Indian goods",
+      "explanation": "The Swadeshi Movement was a response to the Partition of Bengal in 1905.",
+      "difficulty": "easy",
+      "keywords": ["Swadeshi Movement", "British colonial rule"]
+    },
+    {
+      "id": 3,
+      "question_text": "All of the following were key figures in the Indian independence movement, EXCEPT?",
+      "question_type": "mcq",
+      "options": ["Bhagat Singh", "Lord Curzon", "Sarojini Naidu", "Lord Mountbatten"],
+      "correct_answer": "Lord Curzon",
+      "explanation": "Lord Curzon was the Viceroy of India but not a key figure in the Indian independence movement.",
+      "difficulty": "hard",
+      "keywords": ["Indian independence movement", "key figures"]
+    },
+    {
+      "id": 4,
+      "question_text": "The Jallianwala Bagh Massacre occurred on which date?",
+      "question_type": "true_false",
+      "options": ["13 April 1919", "15 August 1947"],
+      "correct_answer": "13 April 1919",
+      "explanation": "General Dyer killed nearly 400 peaceful protesters at Jallianwala Bagh on 13 April 1919.",
+      "difficulty": "easy",
+      "keywords": ["Jallianwala Bagh Massacre", "General Dyer"]
+    },
+    {
+      "id": 5,
+      "question_text": "What was the outcome of the Gandhi-Irwin Pact (1931)?",
+      "question_type": "mcq",
+      "options": ["Immediate independence", "Increased British rule", "End of the Civil Disobedience Movement", "Failure of the pact"],
+      "correct_answer": "End of the Civil Disobedience Movement",
+      "explanation": "The Gandhi-Irwin Pact was an agreement that ended the Civil Disobedience Movement.",
+      "difficulty": "medium",
+      "keywords": ["Gandhi-Irwin Pact", "Civil Disobedience Movement"]
+    }
+  ]
+}
+2026-05-01 18:57:05,197 - test_engine - INFO - Successfully generated 5 questions
+2026-05-01 18:57:05,204 - test_engine - INFO - Generated 5 FRESH questions in real-time
+2026-05-01 18:57:05,207 - test_engine - INFO - Exported 5 questions to questions_Nationalism in India.json
+2026-05-01 18:57:23,972 - test_engine - INFO - Question 1 answered with: Immediate independence
+2026-05-01 18:57:42,648 - test_engine - INFO - Question 2 answered with: to mke quit foreign goods movement
+2026-05-01 18:57:49,257 - test_engine - INFO - Question 3 answered with: Sarojini Naidu
+2026-05-01 18:57:59,178 - test_engine - INFO - Question 4 answered with: True
+2026-05-01 18:58:02,844 - test_engine - INFO - Question 5 answered with: Increased British rule
+2026-05-01 18:58:02,844 - test_engine - DEBUG - Calling verify_answer with args: ('Immediate independence', 'Failed rebellion', <QuestionType.MCQ: 'mcq'>), kwargs: {}
+2026-05-01 18:58:02,844 - test_engine - DEBUG - Verifying: 'immediate independence' vs 'failed rebellion'
+2026-05-01 18:58:02,845 - test_engine - INFO - Generating feedback for wrong answer
+2026-05-01 18:58:03,333 - test_engine - DEBUG - Generated feedback: Don't worry, it's okay to make mistakes. The student's answer, "Immediate independence," is incorrect because the First War of Independence did not lead to immediate freedom from British rule. The correct answer, "Failed rebellion," is right because the uprising was eventually suppressed by the British, but it did play a significant role in inspiring future nationalists who fought for India's independence later on.
+2026-05-01 18:58:03,335 - test_engine - DEBUG - Calling verify_answer with args: ('to mke quit foreign goods movement', 'Boycott of British goods and use of Indian goods', <QuestionType.SHORT_ANSWER: 'short_answer'>), kwargs: {}
+2026-05-01 18:58:03,335 - test_engine - DEBUG - Verifying: 'to mke quit foreign goods movement' vs 'boycott of british goods and use of indian goods'
+2026-05-01 18:58:03,336 - test_engine - INFO - Generating feedback for wrong answer
+2026-05-01 18:58:03,804 - test_engine - DEBUG - Generated feedback: Don't worry, your answer is close but not quite there. The Swadeshi Movement was indeed about reducing the use of foreign goods, but it was more specific than just making a "quit foreign goods movement." The correct answer, "Boycott of British goods and use of Indian goods," is more accurate because it highlights the movement's goal of replacing British-made goods with Indian-made goods, which was a key part of the Swadeshi Movement's strategy.
+2026-05-01 18:58:03,804 - test_engine - DEBUG - Calling verify_answer with args: ('Sarojini Naidu', 'Lord Curzon', <QuestionType.MCQ: 'mcq'>), kwargs: {}
+2026-05-01 18:58:03,804 - test_engine - DEBUG - Verifying: 'sarojini naidu' vs 'lord curzon'
+2026-05-01 18:58:03,804 - test_engine - INFO - Generating feedback for wrong answer
+2026-05-01 18:58:04,353 - test_engine - DEBUG - Generated feedback: Don't worry, it's okay to make mistakes. Your answer, Sarojini Naidu, was actually a key figure in the Indian independence movement. The reason why your answer was incorrect is that Lord Curzon, on the other hand, was actually a British Viceroy of India who tried to suppress the Indian independence movement, rather than being a part of it.
+2026-05-01 18:58:04,359 - test_engine - DEBUG - Calling verify_answer with args: ('True', '13 April 1919', <QuestionType.TRUE_FALSE: 'true_false'>), kwargs: {}
+2026-05-01 18:58:04,359 - test_engine - DEBUG - Verifying: 'true' vs '13 april 1919'
+2026-05-01 18:58:04,364 - test_engine - DEBUG - Calling verify_answer with args: ('Increased British rule', 'End of the Civil Disobedience Movement', <QuestionType.MCQ: 'mcq'>), kwargs: {}
+2026-05-01 18:58:04,364 - test_engine - DEBUG - Verifying: 'increased british rule' vs 'end of the civil disobedience movement'
+2026-05-01 18:58:04,364 - test_engine - INFO - Generating feedback for wrong answer
+2026-05-01 18:58:04,769 - test_engine - DEBUG - Generated feedback: Don't worry, it's okay to make mistakes. The student's answer, "Increased British rule," is not correct because the Gandhi-Irwin Pact actually led to a change in the British government's approach, not an increase in their rule. The correct answer, "End of the Civil Disobedience Movement," is right because the pact marked the end of the movement, which was a period of non-violent resistance against British rule, and it allowed Gandhi to return from jail.
+2026-05-01 18:58:04,782 - test_engine - INFO - Generating report for student: adil
+2026-05-01 18:58:04,782 - test_engine - INFO - Report generated: 20.0% score
+2026-05-01 18:58:04,801 - test_engine - INFO - Report exported to test_report_adil_20260501_185804.json
+2026-05-01 18:58:04,802 - test_engine - INFO - Test completed for adil. Score: 20.0%
+2026-05-02 11:48:25,704 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 11:48:25,715 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 11:48:25,715 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 11:48:25,715 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 11:48:25,715 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-05-02 11:48:25,715 - test_engine - INFO - TestWorkflowEngine initialized
+2026-05-02 11:48:54,182 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 11:48:55,439 - test_engine - DEBUG - Raw LLM response: {
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What did Nelson Mandela say in his inaugural speech about the oppression of South Africa?",
+      "question_type": "short_answer",
+      "options": [],
+      "correct_answer": "",
+      "explanation": "Mandela said that South Africa should never again experience the oppression of one by another.",
+      "difficulty": "medium",
+      "keywords": ["Nelson Mandela", "inherited freedom"]
+    },
+    {
+      "id": 2,
+      "question_text": "What does Nelson Mandela believe is the key to courage?",
+      "question_type": "mcq",
+      "options": ["Conquering fear", "Avoiding fear", "Ignoring fear", "Being fearless"],
+      "correct_answer": "Conquering fear",
+      "explanation": "Mandela believes that courage is not the absence of fear, but triumph over fear.",
+      "difficulty": "medium",
+      "keywords": ["courage", "fear"]
+    },
+    {
+      "id": 3,
+      "question_text": "What did Nelson Mandela think freedom meant as a child?",
+      "question_type": "short_answer",
+      "options": [],
+      "correct_answer": "",
+      "explanation": "Mandela thought freedom meant running in fields and swimming in streams.",
+      "difficulty": "easy",
+      "keywords": ["Nelson Mandela", "childhood"]
+    },
+    {
+      "id": 4,
+      "question_text": "What was Nelson Mandela's sentence for fighting apartheid?",
+      "question_type": "true_false",
+      "options": ["10 years", "27 years"],
+      "correct_answer": "27 years",
+      "explanation": "Mandela was sentenced to 27 years in prison for fighting apartheid.",
+      "difficulty": "easy",
+      "keywords": ["Nelson Mandela", "apartheid"]
+    },
+    {
+      "id": 5,
+      "question_text": "According to Nelson Mandela, who is a prisoner of hatred?",
+      "question_type": "mcq",
+      "options": ["A person who fights for freedom", "A person who takes away another's freedom", "A person who avoids fear", "A person who is courageous"],
+      "correct_answer": "A person who takes away another's freedom",
+      "explanation": "Mandela believes that a man who takes away another's freedom is a prisoner of hatred.",
+      "difficulty": "medium",
+      "keywords": ["hatred", "freedom"]
+    },
+    {
+      "id": 6,
+      "question_text": "What is the most powerful weapon to change the world, according to Nelson Mandela?",
+      "question_type": "short_answer",
+      "options": [],
+      "correct_answer": "Education",
+      "explanation": "Mandela believes that education is the most powerful weapon to change the world.",
+      "difficulty": "easy",
+      "keywords": ["Nelson Mandela", "education"]
+    },
+    {
+      "id": 7,
+      "question_text": "How long was Nelson Mandela in prison for fighting apartheid?",
+      "question_type": "mcq",
+      "options": ["10 years", "20 years", "27 years", "30 years"],
+      "correct_answer": "27 years",
+      "explanation": "Mandela was sentenced to 27 years in prison for fighting apartheid.",
+      "difficulty": "medium",
+      "keywords": ["Nelson Mandela", "apartheid"]
+    },
+    {
+      "id": 8,
+      "question_text": "What is the quote that says 'It always seems impossible until it is done'?",
+      "question_type": "true_false",
+      "options": ["False", "True"],
+      "correct_answer": "True",
+      "explanation": "Mandela said that 'It always seems impossible until it is done'.",
+      "difficulty": "easy",
+      "keywords": ["Nelson Mandela", "quotes"]
+    },
+    {
+      "id": 9,
+      "question_text": "According to Nelson Mandela, who are not truly free?",
+      "question_type": "mcq",
+      "options": ["People who are oppressed", "People who are courageous", "People who are educated", "People who take away another's freedom"],
+      "correct_answer": "People who take away another's freedom",
+      "explanation": "Mandela believes that oppressors are not truly free.",
+      "difficulty": "medium",
+      "keywords": ["freedom", "oppression"]
+    },
+    {
+      "id": 10,
+      "question_text": "What is the greatest glory in living, according to Nelson Mandela?",
+      "question_type": "short_answer",
+      "options": [],
+      "correct_answer": "Rising every time we fall",
+      "explanation": "Mandela believes that the greatest glory in living lies in rising every time we fall.",
+      "difficulty": "easy",
+      "keywords": ["Nelson Mandela", "glory"]
+    }
+  ]
+}
+2026-05-02 11:48:55,439 - test_engine - INFO - Successfully generated 10 questions
+2026-05-02 11:49:08,089 - test_engine - INFO - Question 2 answered with: Avoiding fear
+2026-05-02 11:49:10,194 - test_engine - INFO - Question 5 answered with: A person who avoids fear
+2026-05-02 11:49:15,700 - test_engine - INFO - Question 7 answered with: 30 years
+2026-05-02 11:49:26,599 - test_engine - INFO - Question 9 answered with: People who are courageous
+2026-05-02 11:49:42,861 - test_engine - INFO - Question 4 answered with: False
+2026-05-02 11:49:47,970 - test_engine - INFO - Question 8 answered with: False
+2026-05-02 11:55:04,815 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 11:55:04,815 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 11:55:04,815 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 11:55:04,815 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 11:55:04,816 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-05-02 11:55:04,816 - test_engine - INFO - TestWorkflowEngine initialized
+2026-05-02 11:55:31,734 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 11:55:32,804 - test_engine - INFO - Successfully generated 10 questions
+2026-05-02 11:55:40,525 - test_engine - INFO - Question 1 answered with: Turns blue litmus red
+2026-05-02 11:55:48,342 - test_engine - INFO - Question 2 answered with: pH <7
+2026-05-02 11:55:53,254 - test_engine - INFO - Question 3 answered with: Salt + H2O
+2026-05-02 11:55:57,015 - test_engine - INFO - Question 4 answered with: Sodium hydroxide
+2026-05-02 11:56:02,951 - test_engine - INFO - Question 5 answered with: No reaction occurs
+2026-05-02 11:56:08,427 - test_engine - INFO - Question 6 answered with: pH 0-6
+2026-05-02 11:56:12,635 - test_engine - INFO - Question 7 answered with: Caustic soda
+2026-05-02 11:56:17,031 - test_engine - INFO - Question 8 answered with: Salt + H2O
+2026-05-02 11:56:23,415 - test_engine - INFO - Question 9 answered with: Universal indicator
+2026-05-02 11:58:42,670 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 11:58:42,670 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 11:58:42,670 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 11:58:42,670 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 11:58:42,670 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-05-02 11:58:42,675 - test_engine - INFO - TestWorkflowEngine initialized
+2026-05-02 11:59:21,404 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 11:59:22,438 - test_engine - DEBUG - Raw LLM response: {
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the degree of a polynomial?",
+      "question_type": "mcq",
+      "options": ["The sum of exponents of variables", "The product of coefficients of variables", "The difference between highest and lowest exponents", "The power of the highest degree term"],
+      "correct_answer": "The sum of exponents of variables",
+      "explanation": "Degree is the sum of the exponents of the variables in a polynomial.",
+      "difficulty": "easy",
+      "keywords": ["degree", "polynomial", "exponents"]
+    },
+    {
+      "id": 2,
+      "question_text": "What is the degree of the polynomial 2x^3 + 3x^2 - 4x + 1?",
+      "question_type": "mcq",
+      "options": ["3", "2", "1", "4"],
+      "correct_answer": "3",
+      "explanation": "The degree of a polynomial is determined by the highest exponent of the variable.",
+      "difficulty": "easy",
+      "keywords": ["degree", "polynomial", "exponents"]
+    },
+    {
+      "id": 3,
+      "question_text": "What is the degree of the polynomial x^2 + 2x + 1?",
+      "question_type": "mcq",
+      "options": ["2", "3", "4", "1"],
+      "correct_answer": "2",
+      "explanation": "Degree of polynomial is determined by the highest exponent of the variable.",
+      "difficulty": "easy",
+      "keywords": ["degree", "polynomial", "exponents"]
+    },
+    {
+      "id": 4,
+      "question_text": "What is the degree of a linear polynomial?",
+      "question_type": "mcq",
+      "options": ["1", "2", "3", "4"],
+      "correct_answer": "1",
+      "explanation": "Linear polynomial has only one term.",
+      "difficulty": "easy",
+      "keywords": ["degree", "polynomial", "linear"]
+    },
+    {
+      "id": 5,
+      "question_text": "What is the degree of a cubic polynomial?",
+      "question_type": "mcq",
+      "options": ["1", "2", "3", "4"],
+      "correct_answer": "3",
+      "explanation": "Cubic polynomial has three terms.",
+      "difficulty": "easy",
+      "keywords": ["degree", "polynomial", "cubic"]
+    },
+    {
+      "id": 6,
+      "question_text": "What is the degree of a polynomial with no variable?",
+      "question_type": "mcq",
+      "options": ["0", "1", "2", "3"],
+      "correct_answer": "0",
+      "explanation": "A polynomial with no variable is a constant.",
+      "difficulty": "easy",
+      "keywords": ["degree", "polynomial", "constant"]
+    },
+    {
+      "id": 7,
+      "question_text": "What is the degree of the polynomial x^4 - 2x^3 + x^2 - 3x + 1?",
+      "question_type": "mcq",
+      "options": ["4", "3", "2", "1"],
+      "correct_answer": "4",
+      "explanation": "The degree of a polynomial is determined by the highest exponent of the variable.",
+      "difficulty": "medium",
+      "keywords": ["degree", "polynomial", "exponents"]
+    },
+    {
+      "id": 8,
+      "question_text": "What is the degree of the polynomial x - 2?",
+      "question_type": "mcq",
+      "options": ["1", "2", "3", "4"],
+      "correct_answer": "1",
+      "explanation": "Linear polynomial has only one term.",
+      "difficulty": "easy",
+      "keywords": ["degree", "polynomial", "linear"]
+    },
+    {
+      "id": 9,
+      "question_text": "What is the degree of the polynomial x^2 + 1?",
+      "question_type": "mcq",
+      "options": ["2", "3", "4", "1"],
+      "correct_answer": "2",
+      "explanation": "Degree of polynomial is determined by the highest exponent of the variable.",
+      "difficulty": "easy",
+      "keywords": ["degree", "polynomial", "exponents"]
+    },
+    {
+      "id": 10,
+      "question_text": "What is the degree of the polynomial x^3 + x^2 - x + 1?",
+      "question_type": "mcq",
+      "options": ["3", "4", "2", "1"],
+      "correct_answer": "3",
+      "explanation": "The degree of a polynomial is determined by the highest exponent of the variable.",
+      "difficulty": "medium",
+      "keywords": ["degree", "polynomial", "exponents"]
+    }
+  ]
+}
+2026-05-02 11:59:22,438 - test_engine - INFO - Successfully generated 10 questions
+2026-05-02 11:59:26,975 - test_engine - INFO - Question 1 answered with: The power of the highest degree term
+2026-05-02 11:59:28,464 - test_engine - INFO - Question 2 answered with: 1
+2026-05-02 11:59:32,326 - test_engine - INFO - Question 3 skipped
+2026-05-02 11:59:35,104 - test_engine - INFO - Question 4 skipped
+2026-05-02 11:59:36,978 - test_engine - INFO - Question 5 answered with: 4
+2026-05-02 11:59:40,834 - test_engine - INFO - Question 6 answered with: 0
+2026-05-02 11:59:44,636 - test_engine - INFO - Question 7 answered with: 4
+2026-05-02 11:59:48,702 - test_engine - INFO - Question 8 answered with: 4
+2026-05-02 11:59:51,671 - test_engine - INFO - Question 9 answered with: 1
+2026-05-02 11:59:54,048 - test_engine - INFO - Question 10 skipped
+2026-05-02 11:59:54,050 - test_engine - INFO - Generating report for student: adii
+2026-05-02 11:59:54,050 - test_engine - INFO - Report generated: 20.0% score
+2026-05-02 11:59:54,050 - test_engine - INFO - Report exported to test_report_adii_20260502_115954.json
+2026-05-02 12:15:32,738 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 12:15:32,746 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 12:15:32,746 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 12:15:32,746 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 12:15:32,747 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-05-02 12:15:32,749 - test_engine - INFO - TestWorkflowEngine initialized
+2026-05-02 12:15:44,615 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 12:15:44,615 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 12:15:44,615 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 12:15:44,615 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 12:15:44,615 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-05-02 12:15:44,615 - test_engine - INFO - TestWorkflowEngine initialized
+2026-05-02 12:17:43,734 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 12:17:43,734 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 12:17:43,734 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 12:17:43,734 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 12:17:43,734 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-05-02 12:17:43,740 - test_engine - INFO - TestWorkflowEngine initialized
+2026-05-02 12:20:52,665 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 12:20:53,704 - test_engine - DEBUG - Raw LLM response: {
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What does Mandela mean by courage?",
+      "question_type": "mcq",
+      "options": ["The absence of fear", "Triumph over fear", "Avoiding challenges", "Conquering others"],
+      "correct_answer": "Triumph over fear",
+      "explanation": "Mandela defines courage as not the absence of fear but the triumph over fear.",
+      "difficulty": "hard",
+      "keywords": ["courage", "fear", "triumph"]
+    },
+    {
+      "id": 2,
+      "question_text": "Why did Mandela join the African National Congress (ANC)?",
+      "question_type": "mcq",
+      "options": ["To gain personal freedom", "To fight for the freedom of all his people", "To avoid prison", "To increase his wealth"],
+      "correct_answer": "To fight for the freedom of all his people",
+      "explanation": "Mandela joined the ANC to fight for the freedom of all his people.",
+      "difficulty": "hard",
+      "keywords": ["ANC", "freedom", "people"]
+    },
+    {
+      "id": 3,
+      "question_text": "What did Mandela say about oppressors?",
+      "question_type": "mcq",
+      "options": ["They are truly free", "They are prisoners of their own hatred", "They are brave", "They are strong"],
+      "correct_answer": "They are prisoners of their own hatred",
+      "explanation": "Mandela explains that oppressors are prisoners of their own hatred, prejudice, and narrow-mindedness.",
+      "difficulty": "hard",
+      "keywords": ["oppressors", "hatred", "freedom"]
+    },
+    {
+      "id": 4,
+      "question_text": "According to Mandela, what is the most powerful weapon to change the world?",
+      "question_type": "mcq",
+      "options": ["Money", "Wealth", "Education", "Power"],
+      "correct_answer": "Education",
+      "explanation": "Mandela believes that education is the most powerful weapon to change the world.",
+      "difficulty": "hard",
+      "keywords": ["education", "power", "world"]
+    },
+    {
+      "id": 5,
+      "question_text": "What is the significance of the quote 'It always seems impossible until it is done'?",
+      "question_type": "mcq",
+      "options": ["It emphasizes the importance of failure", "It highlights the power of education", "It shows that anything is possible with determination", "It suggests that freedom is not important"],
+      "correct_answer": "It shows that anything is possible with determination",
+      "explanation": "The quote emphasizes that with determination, anything seems impossible until it is done.",
+      "difficulty": "hard",
+      "keywords": ["determination", "impossible", "done"]
+    },
+    {
+      "id": 6,
+      "question_text": "Why did Mandela thank unknown soldiers who fought for freedom without recognition?",
+      "question_type": "mcq",
+      "options": ["Because they were brave", "Because they were strong", "Because they fought for freedom without recognition", "Because they were rewarded"],
+      "correct_answer": "Because they fought for freedom without recognition",
+      "explanation": "Mandela thanks unknown soldiers who fought for freedom without recognition.",
+      "difficulty": "hard",
+      "keywords": ["freedom", "recognition", "soldiers"]
+    },
+    {
+      "id": 7,
+      "question_text": "What does Mandela mean by 'the chains on all my people were the chains on me'?",
+      "question_type": "mcq",
+      "options": ["That he was a slave", "That he was a prisoner", "That his own freedom was meaningless without freedom for all his people", "That he was oppressed"],
+      "correct_answer": "That his own freedom was meaningless without freedom for all his people",
+      "explanation": "Mandela explains that his own freedom was meaningless without freedom for all his people.",
+      "difficulty": "hard",
+      "keywords": ["freedom", "people", "meaningless"]
+    },
+    {
+      "id": 8,
+      "question_text": "According to Mandela, what is the greatest glory in living?",
+      "question_type": "mcq",
+      "options": ["Rising every time we fall", "Never giving up", "Working hard", "Being successful"],
+      "correct_answer": "Rising every time we fall",
+      "explanation": "Mandela says that the greatest glory in living lies in rising every time we fall.",
+      "difficulty": "hard",
+      "keywords": ["glory", "living", "rising"]
+    },
+    {
+      "id": 9,
+      "question_text": "Why did Mandela spend 27 years in prison?",
+      "question_type": "mcq",
+      "options": ["For fighting for his personal freedom", "For fighting for the freedom of all his people", "For being a slave", "For being a prisoner"],
+      "correct_answer": "For fighting for the freedom of all his people",
+      "explanation": "Mandela spent 27 years in prison for fighting for the freedom of all his people.",
+      "difficulty": "hard",
+      "keywords": ["prison", "freedom", "people"]
+    },
+    {
+      "id": 10,
+      "question_text": "What did Mandela say about forgiveness?",
+      "question_type": "mcq",
+      "options": ["It is not important", "It is powerful", "It is weak", "It is not necessary"],
+      "correct_answer": "It is powerful",
+      "explanation": "Mandela believes that forgiveness is powerful.",
+      "difficulty": "hard",
+      "keywords": ["forgiveness", "power", "important"]
+    }
+  ]
+}
+2026-05-02 12:20:53,704 - test_engine - INFO - Successfully generated 10 questions
+2026-05-02 12:20:56,980 - test_engine - INFO - Question 1 answered with: Avoiding challenges
+2026-05-02 12:21:06,566 - test_engine - INFO - Question 2 skipped
+2026-05-02 12:21:19,249 - test_engine - INFO - Question 4 answered with: Education
+2026-05-02 12:21:22,968 - test_engine - INFO - Question 5 answered with: It shows that anything is possible with determination
+2026-05-02 12:21:24,856 - test_engine - INFO - Question 6 answered with: Because they were strong
+2026-05-02 12:21:26,200 - test_engine - INFO - Question 7 answered with: That he was a prisoner
+2026-05-02 12:21:27,047 - test_engine - INFO - Question 8 answered with: Working hard
+2026-05-02 12:21:27,715 - test_engine - INFO - Question 9 answered with: For fighting for the freedom of all his people
+2026-05-02 12:21:28,481 - test_engine - INFO - Question 10 answered with: It is weak
+2026-05-02 12:21:28,481 - test_engine - INFO - Generating report for student: adii
+2026-05-02 12:21:28,484 - test_engine - INFO - Report generated: 30.0% score
+2026-05-02 12:21:28,484 - test_engine - INFO - Report exported to test_report_adii_20260502_122128.json
+2026-05-02 12:21:39,951 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 12:21:39,951 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 12:21:39,951 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 12:21:39,951 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 12:21:39,954 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-05-02 12:21:39,954 - test_engine - INFO - TestWorkflowEngine initialized
+2026-05-02 12:22:01,088 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 12:22:02,097 - test_engine - DEBUG - Raw LLM response: {
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "Who led the Non-Cooperation Movement (1920-1922)?",
+      "question_type": "mcq",
+      "options": ["Bal Gangadhar Tilak", "Lala Lajpat Rai", "Gandhi", "Jawaharlal Nehru"],
+      "correct_answer": "Gandhi",
+      "explanation": "The Non-Cooperation Movement was a civil disobedience campaign launched by Gandhi.",
+      "difficulty": "hard",
+      "keywords": ["Non-Cooperation Movement", "Gandhi"]
+    },
+    {
+      "id": 2,
+      "question_text": "What was the outcome of the Jallianwala Bagh Massacre?",
+      "question_type": "mcq",
+      "options": ["The British government was defeated", "General Dyer was punished", "The massacre led to India's independence", "Nearly 400 peaceful protesters were killed"],
+      "correct_answer": "Nearly 400 peaceful protesters were killed",
+      "explanation": "The Jallianwala Bagh Massacre was a brutal crackdown by General Dyer.",
+      "difficulty": "hard",
+      "keywords": ["Jallianwala Bagh Massacre", "General Dyer"]
+    },
+    {
+      "id": 3,
+      "question_text": "What was the name of the pact that ended the Non-Cooperation Movement?",
+      "question_type": "mcq",
+      "options": ["Gandhi-Irwin Pact", "Lucknow Pact", "Simon Commission", "Quit India Movement"],
+      "correct_answer": "Gandhi-Irwin Pact",
+      "explanation": "The Gandhi-Irwin Pact was an agreement between Gandhi and Lord Irwin.",
+      "difficulty": "hard",
+      "keywords": ["Gandhi-Irwin Pact", "Non-Cooperation Movement"]
+    },
+    {
+      "id": 4,
+      "question_text": "Who was killed during the protests against the Simon Commission?",
+      "question_type": "mcq",
+      "options": ["Gandhi", "Tilak", "Lala Lajpat Rai", "Jawaharlal Nehru"],
+      "correct_answer": "Lala Lajpat Rai",
+      "explanation": "Lala Lajpat Rai was a key figure in the Indian National Congress.",
+      "difficulty": "hard",
+      "keywords": ["Simon Commission", "Lala Lajpat Rai"]
+    },
+    {
+      "id": 5,
+      "question_text": "What was the name of the movement that demanded immediate British departure?",
+      "question_type": "mcq",
+      "options": ["Quit India Movement", "Non-Cooperation Movement", "Civil Disobedience Movement", "Swadeshi Movement"],
+      "correct_answer": "Quit India Movement",
+      "explanation": "The Quit India Movement was a major campaign led by Gandhi.",
+      "difficulty": "hard",
+      "keywords": ["Quit India Movement", "Gandhi"]
+    },
+    {
+      "id": 6,
+      "question_text": "Who led the Dandi March?",
+      "question_type": "mcq",
+      "options": ["Gandhi", "Tilak", "Lala Lajpat Rai", "Bhagat Singh"],
+      "correct_answer": "Gandhi",
+      "explanation": "The Dandi March was a key event in the Civil Disobedience Movement.",
+      "difficulty": "hard",
+      "keywords": ["Dandi March", "Gandhi"]
+    },
+    {
+      "id": 7,
+      "question_text": "What was the outcome of the Lahore session (1929)?",
+      "question_type": "mcq",
+      "options": ["The Indian National Congress was dissolved", "The British government was defeated", "Poorna Swaraj was declared", "The Non-Cooperation Movement was called off"],
+      "correct_answer": "Poorna Swaraj was declared",
+      "explanation": "The Lahore session was a significant event in the Indian independence movement.",
+      "difficulty": "hard",
+      "keywords": ["Lahore session", "Poorna Swaraj"]
+    },
+    {
+      "id": 8,
+      "question_text": "Who was the head of the Simon Commission?",
+      "question_type": "mcq",
+      "options": ["Lord Curzon", "General Dyer", "Lord Irwin", "John Simon"],
+      "correct_answer": "John Simon",
+      "explanation": "The Simon Commission was a British commission that sparked widespread protests.",
+      "difficulty": "hard",
+      "keywords": ["Simon Commission", "John Simon"]
+    },
+    {
+      "id": 9,
+      "question_text": "What was the name of the act that allowed arrest without trial?",
+      "question_type": "mcq",
+      "options": ["Rowlatt Act", "Salt Act", "Quit India Act", "Civil Disobedience Act"],
+      "correct_answer": "Rowlatt Act",
+      "explanation": "The Rowlatt Act was a major source of discontent among Indians.",
+      "difficulty": "hard",
+      "keywords": ["Rowlatt Act", "General Dyer"]
+    },
+    {
+      "id": 10,
+      "question_text": "What was the date of India's independence?",
+      "question_type": "mcq",
+      "options": ["15 August 1947", "26 January 1948", "1 January 1946", "31 December 1945"],
+      "correct_answer": "15 August 1947",
+      "explanation": "India gained independence from British rule on 15 August 1947.",
+      "difficulty": "hard",
+      "keywords": ["India's independence", "15 August 1947"]
+    }
+  ]
+}
+2026-05-02 12:22:02,097 - test_engine - INFO - Successfully generated 10 questions
+2026-05-02 12:22:05,141 - test_engine - INFO - Question 1 answered with: Jawaharlal Nehru
+2026-05-02 12:22:06,339 - test_engine - INFO - Question 2 answered with: General Dyer was punished
+2026-05-02 12:22:07,265 - test_engine - INFO - Question 3 answered with: Quit India Movement
+2026-05-02 12:22:07,938 - test_engine - INFO - Question 4 answered with: Gandhi
+2026-05-02 12:22:08,589 - test_engine - INFO - Question 5 answered with: Non-Cooperation Movement
+2026-05-02 12:22:09,375 - test_engine - INFO - Question 6 answered with: Bhagat Singh
+2026-05-02 12:22:29,385 - test_engine - INFO - Question 7 answered with: The British government was defeated
+2026-05-02 12:22:33,616 - test_engine - INFO - Question 8 answered with: General Dyer
+2026-05-02 12:22:35,916 - test_engine - INFO - Question 9 answered with: Civil Disobedience Act
+2026-05-02 12:22:43,149 - test_engine - INFO - Question 10 answered with: 15 August 1947
+2026-05-02 12:22:43,150 - test_engine - INFO - Generating report for student: adii
+2026-05-02 12:22:43,150 - test_engine - INFO - Report generated: 10.0% score
+2026-05-02 12:22:43,154 - test_engine - INFO - Report exported to test_report_adii_20260502_122243.json
+2026-05-02 12:45:23,164 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 12:45:23,171 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 12:45:23,171 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 12:45:23,171 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 12:45:23,171 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-05-02 12:45:23,175 - test_engine - INFO - TestWorkflowEngine initialized
+2026-05-02 12:45:52,291 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 12:45:53,175 - test_engine - DEBUG - Raw LLM response: {
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the pH scale used to measure?",
+      "question_type": "mcq",
+      "options": ["Acidity/basicity", "Temperature", "Pressure", "Concentration"],
+      "correct_answer": "Acidity/basicity",
+      "explanation": "The pH scale ranges from 0 to 14.",
+      "difficulty": "medium",
+      "keywords": ["pH scale", "acidity", "basicity"]
+    },
+    {
+      "id": 2,
+      "question_text": "Which property is common to all acids?",
+      "question_type": "mcq",
+      "options": ["Taste bitter", "Feel soapy", "Release H+ ions in water", "Turn red litmus blue"],
+      "correct_answer": "Release H+ ions in water",
+      "explanation": "Acids release H+ ions in water, forming H3O+.",
+      "difficulty": "medium",
+      "keywords": ["acids", "H+ ions", "water"]
+    },
+    {
+      "id": 3,
+      "question_text": "What type of reaction occurs between an acid and a base?",
+      "question_type": "mcq",
+      "options": ["Combination", "Decomposition", "Neutralisation", "Oxidation"],
+      "correct_answer": "Neutralisation",
+      "explanation": "Neutralisation reactions produce salt, water, and heat.",
+      "difficulty": "medium",
+      "keywords": ["neutralisation", "acids", "bases"]
+    },
+    {
+      "id": 4,
+      "question_text": "Which of the following salts is commonly used as a bleaching agent?",
+      "question_type": "mcq",
+      "options": ["Sodium chloride", "Bleaching powder", "Sodium hydroxide", "Baking soda"],
+      "correct_answer": "Bleaching powder",
+      "explanation": "Bleaching powder is used to whiten fabrics and clean surfaces.",
+      "difficulty": "medium",
+      "keywords": ["salts", "bleaching agent", "CaOCl2"]
+    },
+    {
+      "id": 5,
+      "question_text": "What is the effect of heating Plaster of Paris?",
+      "question_type": "mcq",
+      "options": ["It becomes more soluble", "It loses its crystalline structure", "It becomes less soluble", "It changes to gypsum"],
+      "correct_answer": "It changes to gypsum",
+      "explanation": "Plaster of Paris is obtained from heating gypsum.",
+      "difficulty": "medium",
+      "keywords": ["Plaster of Paris", "gypsum", "heating"]
+    },
+    {
+      "id": 6,
+      "question_text": "Which of the following salts contains water of crystallisation?",
+      "question_type": "mcq",
+      "options": ["Sodium chloride", "Copper(II) sulfate", "Baking soda", "Washing soda"],
+      "correct_answer": "Copper(II) sulfate",
+      "explanation": "Copper(II) sulfate contains 5 water molecules in its crystalline structure.",
+      "difficulty": "medium",
+      "keywords": ["water of crystallisation", "copper(II) sulfate", "CuSO4"]
+    },
+    {
+      "id": 7,
+      "question_text": "What is the role of pH in the human body?",
+      "question_type": "mcq",
+      "options": ["To regulate body temperature", "To control blood pressure", "To maintain acid-base balance", "To facilitate digestion"],
+      "correct_answer": "To maintain acid-base balance",
+      "explanation": "The human body maintains a narrow pH range (7.35-7.45) to function properly.",
+      "difficulty": "medium",
+      "keywords": ["pH", "human body", "acid-base balance"]
+    },
+    {
+      "id": 8,
+      "question_text": "What happens when an acid reacts with a metal carbonate?",
+      "question_type": "mcq",
+      "options": ["It produces salt, water, and heat", "It produces salt, H2, and CO2", "It produces salt, H2O, and CO2", "It produces salt and H2O"],
+      "correct_answer": "It produces salt, H2, and CO2",
+      "explanation": "Acids react with metal carbonates to produce salt, H2, and CO2.",
+      "difficulty": "medium",
+      "keywords": ["acids", "metal carbonates", "salt", "H2", "CO2"]
+    },
+    {
+      "id": 9,
+      "question_text": "What is the effect of adding baking soda to a recipe?",
+      "question_type": "mcq",
+      "options": ["It lowers the pH of the mixture", "It increases the pH of the mixture", "It releases CO2 gas", "It absorbs moisture"],
+      "correct_answer": "It releases CO2 gas",
+      "explanation": "Baking soda releases CO2 gas when heated or mixed with an acid.",
+      "difficulty": "medium",
+      "keywords": ["baking soda", "CO2 gas", "recipe"]
+    },
+    {
+      "id": 10,
+      "question_text": "What type of salt is washing soda?",
+      "question_type": "mcq",
+      "options": ["Sodium chloride", "Sodium hydroxide", "Sodium carbonate", "Sodium bicarbonate"],
+      "correct_answer": "Sodium carbonate",
+      "explanation": "Washing soda is a hydrated form of sodium carbonate.",
+      "difficulty": "medium",
+      "keywords": ["washing soda", "sodium carbonate", "hydrated"]
+    }
+  ]
+}
+2026-05-02 12:45:53,175 - test_engine - INFO - Successfully generated 10 questions
+2026-05-02 15:22:52,608 - test_engine - INFO - Question 1 skipped
+2026-05-02 15:22:54,993 - test_engine - INFO - Question 2 answered with: Feel soapy
+2026-05-02 15:22:56,872 - test_engine - INFO - Question 3 answered with: Oxidation
+2026-05-02 15:22:59,441 - test_engine - INFO - Question 4 answered with: Sodium hydroxide
+2026-05-02 15:23:01,534 - test_engine - INFO - Question 5 answered with: It becomes more soluble
+2026-05-02 15:23:03,240 - test_engine - INFO - Question 6 answered with: Copper(II) sulfate
+2026-05-02 15:23:09,314 - test_engine - INFO - Question 8 answered with: It produces salt, H2, and CO2
+2026-05-02 15:23:10,789 - test_engine - INFO - Question 9 answered with: It lowers the pH of the mixture
+2026-05-02 15:23:12,304 - test_engine - INFO - Question 10 answered with: Sodium carbonate
+2026-05-02 15:23:12,304 - test_engine - INFO - Generating report for student: sei
+2026-05-02 15:23:12,304 - test_engine - INFO - Report generated: 30.0% score
+2026-05-02 15:23:12,332 - test_engine - INFO - Report exported to test_report_sei_20260502_152312.json
+2026-05-02 15:28:03,234 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 15:28:03,234 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 15:28:03,235 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 15:28:03,235 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 15:28:03,236 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-05-02 15:28:03,238 - test_engine - INFO - TestWorkflowEngine initialized
+2026-05-02 15:28:16,596 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 15:28:17,538 - test_engine - DEBUG - Raw LLM response: {
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the taste of a base?",
+      "question_type": "mcq",
+      "options": ["Sour", "Bitter", "Sweet", "Salty"],
+      "correct_answer": "Bitter",
+      "explanation": "Bases are known for their bitter taste.",
+      "difficulty": "medium",
+      "keywords": ["bases", "taste"]
+    },
+    {
+      "id": 2,
+      "question_text": "Which indicator turns blue litmus red?",
+      "question_type": "mcq",
+      "options": ["Litmus", "Turmeric", "Phenolphthalein", "Methyl Orange"],
+      "correct_answer": "Litmus",
+      "explanation": "Litmus is commonly used to identify acids and bases.",
+      "difficulty": "medium",
+      "keywords": ["indicator", "litmus"]
+    },
+    {
+      "id": 3,
+      "question_text": "What is the pH scale used for?",
+      "question_type": "mcq",
+      "options": ["Measuring temperature", "Measuring pressure", "Measuring acidity/basicity", "Measuring density"],
+      "correct_answer": "Measuring acidity/basicity",
+      "explanation": "The pH scale is used to measure the acidity/basicity of a solution.",
+      "difficulty": "easy",
+      "keywords": ["pH scale", "acidity/basicity"]
+    },
+    {
+      "id": 4,
+      "question_text": "What is the pH of human blood?",
+      "question_type": "mcq",
+      "options": ["6.8", "7.0", "7.2", "7.4"],
+      "correct_answer": "7.4",
+      "explanation": "The pH of human blood is slightly alkaline.",
+      "difficulty": "easy",
+      "keywords": ["blood", "pH"]
+    },
+    {
+      "id": 5,
+      "question_text": "What is the reaction between acid and base called?",
+      "question_type": "mcq",
+      "options": ["Neutralization reaction", "Oxidation reaction", "Reduction reaction", "Combination reaction"],
+      "correct_answer": "Neutralization reaction",
+      "explanation": "The reaction between acid and base is known as a neutralization reaction.",
+      "difficulty": "medium",
+      "keywords": ["acid", "base", "reaction"]
+    },
+    {
+      "id": 6,
+      "question_text": "What is the common name of NaOH?",
+      "question_type": "mcq",
+      "options": ["Sodium chloride", "Sodium hydroxide", "Bleaching powder", "Washing soda"],
+      "correct_answer": "Sodium hydroxide",
+      "explanation": "Sodium hydroxide is commonly known as caustic soda.",
+      "difficulty": "medium",
+      "keywords": ["sodium hydroxide", "caustic soda"]
+    },
+    {
+      "id": 7,
+      "question_text": "What is Plaster of Paris?",
+      "question_type": "mcq",
+      "options": ["A type of acid", "A type of base", "A type of salt", "A type of plaster"],
+      "correct_answer": "A type of plaster",
+      "explanation": "Plaster of Paris is a type of plaster made from gypsum.",
+      "difficulty": "easy",
+      "keywords": ["Plaster of Paris", "gypsum"]
+    },
+    {
+      "id": 8,
+      "question_text": "What happens when a base reacts with a non-metal oxide?",
+      "question_type": "mcq",
+      "options": ["Salt + H2O", "Salt + H2", "Salt + CO2", "Salt + H3O+"],
+      "correct_answer": "Salt + H2O",
+      "explanation": "Bases react with non-metal oxides to form a salt and water.",
+      "difficulty": "hard",
+      "keywords": ["base", "non-metal oxide", "reaction"]
+    },
+    {
+      "id": 9,
+      "question_text": "What is the water content in CuSO4.5H2O?",
+      "question_type": "mcq",
+      "options": ["Fixed water molecules", "Variable water molecules", "No water molecules", "Excess water molecules"],
+      "correct_answer": "Fixed water molecules",
+      "explanation": "CuSO4.5H2O has fixed water molecules in its crystal.",
+      "difficulty": "hard",
+      "keywords": ["CuSO4", "water content"]
+    },
+    {
+      "id": 10,
+      "question_text": "What is the product formed when a base reacts with a metal?",
+      "question_type": "mcq",
+      "options": ["Salt + H2O", "Salt + H2", "Salt + CO2", "Salt + H3O+"],
+      "correct_answer": "Salt + H2",
+      "explanation": "Bases react with some metals to form a salt and hydrogen gas.",
+      "difficulty": "hard",
+      "keywords": ["base", "metal", "reaction"]
+    }
+  ]
+}
+2026-05-02 15:28:17,538 - test_engine - INFO - Successfully generated 10 questions
+2026-05-02 15:28:35,047 - test_engine - INFO - Generating report for student: adi
+2026-05-02 15:28:35,047 - test_engine - INFO - Report generated: 0.0% score
+2026-05-02 15:28:35,081 - test_engine - INFO - Report exported to test_report_adi_20260502_152835.json
+2026-05-02 15:29:08,258 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 15:29:08,258 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 15:29:08,258 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 15:29:08,258 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 15:29:08,258 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-05-02 15:29:08,265 - test_engine - INFO - TestWorkflowEngine initialized
+2026-05-02 15:32:28,264 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 15:32:29,331 - test_engine - DEBUG - Raw LLM response: {
+  "questions": [
+    {
+      "id": 1,
+      "question_text": "What is the characteristic of particles in solids?",
+      "question_type": "mcq",
+      "options": ["Tightly packed with strong forces", "Far apart with weak forces", "Free to move in all directions", "Only vibrating in position"],
+      "correct_answer": "Only vibrating in position",
+      "explanation": "Solids have fixed shape and volume because particles are tightly packed with strong forces, only vibrating in position.",
+      "difficulty": "hard",
+      "keywords": ["solids", "particles"]
+    },
+    {
+      "id": 2,
+      "question_text": "Which state of matter has no fixed shape or volume?",
+      "question_type": "mcq",
+      "options": ["Solids", "Liquids", "Gases", "Plasma"],
+      "correct_answer": "Gases",
+      "explanation": "Gases have no fixed shape or volume because particles are far apart with very weak forces, moving freely at high speed.",
+      "difficulty": "hard",
+      "keywords": ["gases", "states of matter"]
+    },
+    {
+      "id": 3,
+      "question_text": "What is the process called when a solid directly changes to a gas?",
+      "question_type": "mcq",
+      "options": ["Sublimation", "Deposition", "Melting", "Condensation"],
+      "correct_answer": "Sublimation",
+      "explanation": "Sublimation changes solid directly to gas (camphor, dry ice).",
+      "difficulty": "hard",
+      "keywords": ["sublimation", "change of state"]
+    },
+    {
+      "id": 4,
+      "question_text": "How does increasing pressure affect a gas?",
+      "question_type": "mcq",
+      "options": ["It expands and occupies more space", "It contracts and occupies less space", "It liquefies and occupies a fixed volume", "It changes color"],
+      "correct_answer": "It liquefies and occupies a fixed volume",
+      "explanation": "Increasing pressure can liquefy gases as in LPG cylinders.",
+      "difficulty": "hard",
+      "keywords": ["pressure", "gases"]
+    },
+    {
+      "id": 5,
+      "question_text": "What is the term for heat required to change state without changing temperature?",
+      "question_type": "mcq",
+      "options": ["Latent heat", "Specific heat", "Molar heat", "Thermal energy"],
+      "correct_answer": "Latent heat",
+      "explanation": "Latent heat is heat required to change state without changing temperature.",
+      "difficulty": "hard",
+      "keywords": ["latent heat", "change of state"]
+    },
+    {
+      "id": 6,
+      "question_text": "What is evaporation?",
+      "question_type": "mcq",
+      "options": ["The process of melting ice", "The process of boiling water", "The process of changing liquid to gas at any temperature only at the surface", "The process of condensing gas"],
+      "correct_answer": "The process of changing liquid to gas at any temperature only at the surface",
+      "explanation": "Evaporation changes liquid to gas at any temperature only at the surface, depending on temperature, surface area, humidity, and wind speed.",
+      "difficulty": "hard",
+      "keywords": ["evaporation", "change of state"]
+    },
+    {
+      "id": 7,
+      "question_text": "What is the effect of evaporation on the surroundings?",
+      "question_type": "mcq",
+      "options": ["It increases the temperature of the surroundings", "It decreases the temperature of the surroundings", "It has no effect on the temperature of the surroundings", "It increases the humidity in the surroundings"],
+      "correct_answer": "It decreases the temperature of the surroundings",
+      "explanation": "Evaporation causes cooling by taking heat from surroundings, seen in sweating and earthen pots.",
+      "difficulty": "hard",
+      "keywords": ["evaporation", "cooling"]
+    },
+    {
+      "id": 8,
+      "question_text": "What is deposition?",
+      "question_type": "mcq",
+      "options": ["The process of changing solid to gas", "The process of changing gas to solid", "The process of changing liquid to solid", "The process of changing solid to liquid"],
+      "correct_answer": "The process of changing gas to solid",
+      "explanation": "Deposition changes gas directly to solid (frost, snow).",
+      "difficulty": "hard",
+      "keywords": ["deposition", "change of state"]
+    },
+    {
+      "id": 9,
+      "question_text": "What is the characteristic of particles in liquids?",
+      "question_type": "mcq",
+      "options": ["Tightly packed with strong forces", "Far apart with weak forces", "Free to move in all directions", "Slide past each other with larger spaces and weaker forces"],
+      "correct_answer": "Slide past each other with larger spaces and weaker forces",
+      "explanation": "Liquids have fixed volume but no fixed shape because particles slide past each other with larger spaces and weaker forces.",
+      "difficulty": "hard",
+      "keywords": ["liquids", "particles"]
+    },
+    {
+      "id": 10,
+      "question_text": "What is the effect of condensation on a gas?",
+      "question_type": "mcq",
+      "options": ["It expands and occupies more space", "It contracts and occupies less space", "It liquefies and occupies a fixed volume", "It changes to a solid"],
+      "correct_answer": "It liquefies and occupies a fixed volume",
+      "explanation": "Condensation is the process of a gas changing to a liquid.",
+      "difficulty": "hard",
+      "keywords": ["condensation", "change of state"]
+    }
+  ]
+}
+2026-05-02 15:32:29,331 - test_engine - INFO - Successfully generated 10 questions
+2026-05-02 15:32:34,476 - test_engine - INFO - Question 1 answered with: Far apart with weak forces
+2026-05-02 15:32:38,934 - test_engine - INFO - Question 2 answered with: Liquids
+2026-05-02 15:32:46,542 - test_engine - INFO - Question 3 answered with: Sublimation
+2026-05-02 15:32:59,339 - test_engine - INFO - Question 4 answered with: It expands and occupies more space
+2026-05-02 15:33:06,947 - test_engine - INFO - Question 5 answered with: Thermal energy
+2026-05-02 15:33:20,138 - test_engine - INFO - Question 6 answered with: The process of changing liquid to gas at any temperature only at the surface
+2026-05-02 15:33:31,799 - test_engine - INFO - Question 7 answered with: It increases the temperature of the surroundings
+2026-05-02 15:33:38,548 - test_engine - INFO - Question 8 answered with: The process of changing liquid to solid
+2026-05-02 15:33:51,131 - test_engine - INFO - Question 9 answered with: Free to move in all directions
+2026-05-02 15:33:57,586 - test_engine - INFO - Question 10 answered with: It contracts and occupies less space
+2026-05-02 15:33:57,588 - test_engine - INFO - Generating report for student: aaa
+2026-05-02 15:33:57,588 - test_engine - INFO - Report generated: 20.0% score
+2026-05-02 15:33:57,594 - test_engine - INFO - Report exported to test_report_aaa_20260502_153357.json
+2026-05-02 16:53:42,443 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 16:53:42,448 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 16:53:42,448 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 16:53:42,448 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 16:53:42,448 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-05-02 16:53:42,450 - test_engine - INFO - TestWorkflowEngine initialized
+2026-05-02 16:54:05,604 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 16:54:05,604 - test_engine - WARNING - Attempt 1 failed, retrying in 2.0s: Missing required arguments; Expected either ('messages' and 'model') or ('messages', 'model' and 'stream') arguments to be given
+2026-05-02 16:54:07,613 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 16:54:07,613 - test_engine - WARNING - Attempt 2 failed, retrying in 4.0s: Missing required arguments; Expected either ('messages' and 'model') or ('messages', 'model' and 'stream') arguments to be given
+2026-05-02 16:54:11,614 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 16:54:11,614 - test_engine - WARNING - Attempt 3 failed, retrying in 8.0s: Missing required arguments; Expected either ('messages' and 'model') or ('messages', 'model' and 'stream') arguments to be given
+2026-05-02 16:54:19,616 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 16:54:19,616 - test_engine - WARNING - Attempt 4 failed, retrying in 16.0s: Missing required arguments; Expected either ('messages' and 'model') or ('messages', 'model' and 'stream') arguments to be given
+2026-05-02 20:12:42,287 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 20:12:42,289 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 20:12:42,290 - test_engine - INFO - QuestionGenerator initialized
+2026-05-02 20:12:42,290 - test_engine - INFO - ExplanationGenerator initialized
+2026-05-02 20:12:42,290 - test_engine - DEBUG - LangGraph workflow built successfully
+2026-05-02 20:12:42,292 - test_engine - INFO - TestWorkflowEngine initialized
+2026-05-02 20:13:51,082 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 20:13:51,082 - test_engine - WARNING - Attempt 1 failed, retrying in 2.0s: Missing required arguments; Expected either ('messages' and 'model') or ('messages', 'model' and 'stream') arguments to be given
+2026-05-02 20:13:53,085 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 20:13:53,085 - test_engine - WARNING - Attempt 2 failed, retrying in 4.0s: Missing required arguments; Expected either ('messages' and 'model') or ('messages', 'model' and 'stream') arguments to be given
+2026-05-02 20:13:57,088 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 20:13:57,088 - test_engine - WARNING - Attempt 3 failed, retrying in 8.0s: Missing required arguments; Expected either ('messages' and 'model') or ('messages', 'model' and 'stream') arguments to be given
+2026-05-02 20:14:05,089 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 20:14:05,089 - test_engine - WARNING - Attempt 4 failed, retrying in 16.0s: Missing required arguments; Expected either ('messages' and 'model') or ('messages', 'model' and 'stream') arguments to be given
+2026-05-02 20:14:21,090 - test_engine - INFO - Generating 10 questions from summary
+2026-05-02 20:14:21,090 - test_engine - ERROR - Failed after 5 attempts: Missing required arguments; Expected either ('messages' and 'model') or ('messages', 'model' and 'stream') arguments to be given
