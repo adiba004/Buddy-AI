@@ -1,0 +1,271 @@
+<svg width="100%" viewBox="0 0 1100 1700" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>App user journey map</title>
+  <desc>Full user journey across 5 stages with touchpoints, actions, pain points and emotions for each stage.</desc>
+
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- background -->
+  <rect width="1100" height="1700" fill="#f7f7f5"/>
+
+  <!-- ══════════ LEGEND ══════════ -->
+  <rect x="30" y="18" width="1040" height="42" rx="8" fill="#fff" stroke="#ddd" stroke-width="0.8"/>
+  <rect x="52"  y="30" width="13" height="13" rx="3" fill="#fffde0" stroke="#c8a800" stroke-width="1"/>
+  <text x="70"  y="41" font-family="Arial,sans-serif" font-size="11" fill="#555">Touchpoints / Actions</text>
+  <rect x="220" y="30" width="13" height="13" rx="3" fill="#ffe5e5" stroke="#d06060" stroke-width="1"/>
+  <text x="238" y="41" font-family="Arial,sans-serif" font-size="11" fill="#555">Pain Points</text>
+  <rect x="340" y="30" width="13" height="13" rx="3" fill="#fde8d0" stroke="#c07020" stroke-width="1"/>
+  <text x="358" y="41" font-family="Arial,sans-serif" font-size="11" fill="#555">Thoughts &amp; Emotions</text>
+  <rect x="520" y="30" width="13" height="13" rx="3" fill="#d8f5e0" stroke="#4aaa6a" stroke-width="1"/>
+  <text x="538" y="41" font-family="Arial,sans-serif" font-size="11" fill="#555">Delight Moment</text>
+  <rect x="670" y="30" width="13" height="13" rx="8" fill="#c0f0d4" stroke="#5aaa7a" stroke-width="1"/>
+  <text x="688" y="41" font-family="Arial,sans-serif" font-size="11" fill="#555">Stage Node</text>
+
+  <!-- ══════════ SPINE ══════════ -->
+  <line x1="550" y1="90" x2="550" y2="1610" stroke="#ccc" stroke-width="1.5"/>
+
+  <!-- START -->
+  <rect x="485" y="70" width="130" height="36" rx="18" fill="#c0f0d4" stroke="#5aaa7a" stroke-width="1.4"/>
+  <text x="550" y="93" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#1a5c34">Start</text>
+
+  <!-- ══════════════════════════════════════════
+       STAGE 1 — AWARENESS   (spine y=200)
+  ══════════════════════════════════════════ -->
+  <!-- stage node -->
+  <rect x="492" y="178" width="116" height="44" rx="8" fill="#fffde0" stroke="#c8a800" stroke-width="1.6"/>
+  <text x="550" y="205" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#5a4000">Awareness</text>
+
+  <!-- connectors -->
+  <line x1="340" y1="200" x2="492" y2="200" stroke="#aaa" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="608" y1="200" x2="760" y2="200" stroke="#aaa" stroke-width="1" marker-end="url(#arr)"/>
+
+  <!-- LEFT: Touchpoints  box h=56 -->
+  <rect x="50" y="144" width="288" height="56" rx="7" fill="#fffde0" stroke="#c8a800" stroke-width="1"/>
+  <text x="64" y="160" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#a07000">TOUCHPOINTS</text>
+  <text x="64" y="176" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">Ads, store, word of mouth, YouTube</text>
+  <text x="64" y="192" font-family="Arial,sans-serif" font-size="11" fill="#5a4000"> </text>
+
+  <!-- LEFT: Actions box h=44 -->
+  <rect x="50" y="208" width="288" height="44" rx="7" fill="#fffde0" stroke="#c8a800" stroke-width="1"/>
+  <text x="64" y="224" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#a07000">ACTIONS</text>
+  <text x="64" y="242" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">Ad, search, friend referral, reviews</text>
+
+  <!-- RIGHT: Pain Points box h=44 -->
+  <rect x="762" y="144" width="288" height="44" rx="7" fill="#ffe5e5" stroke="#d06060" stroke-width="1"/>
+  <text x="776" y="160" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#b03030">PAIN POINTS</text>
+  <text x="776" y="178" font-family="Arial,sans-serif" font-size="11" fill="#7a1a1a">Too many options; AI quality; cost</text>
+
+  <!-- RIGHT: Emotions box h=56 -->
+  <rect x="762" y="196" width="288" height="56" rx="7" fill="#fde8d0" stroke="#c07020" stroke-width="1"/>
+  <text x="776" y="212" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#904000">EMOTIONS</text>
+  <text x="776" y="229" font-family="Arial,sans-serif" font-size="11" fill="#6a2a00">Exams soon → AI teacher?</text>
+  <text x="776" y="245" font-family="Arial,sans-serif" font-size="11" fill="#6a2a00">→ Reviews good</text>
+
+  <!-- ══════════════════════════════════════════
+       STAGE 2 — ONBOARDING   (spine y=400)
+  ══════════════════════════════════════════ -->
+  <line x1="550" y1="222" x2="550" y2="378" stroke="#ccc" stroke-width="1.5"/>
+
+  <rect x="492" y="378" width="116" height="44" rx="8" fill="#fffde0" stroke="#c8a800" stroke-width="1.6"/>
+  <text x="550" y="405" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#5a4000">Onboarding</text>
+
+  <line x1="340" y1="400" x2="492" y2="400" stroke="#aaa" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="608" y1="400" x2="760" y2="400" stroke="#aaa" stroke-width="1" marker-end="url(#arr)"/>
+
+  <!-- LEFT: Touchpoints h=68 -->
+  <rect x="50" y="338" width="288" height="68" rx="7" fill="#fffde0" stroke="#c8a800" stroke-width="1"/>
+  <text x="64" y="355" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#a07000">TOUCHPOINTS</text>
+  <text x="64" y="372" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">Download, verification, profile,</text>
+  <text x="64" y="388" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">subject, language screens</text>
+  <text x="64" y="401" font-family="Arial,sans-serif" font-size="11" fill="#5a4000"> </text>
+
+  <!-- LEFT: Actions h=44 -->
+  <rect x="50" y="414" width="288" height="44" rx="7" fill="#fffde0" stroke="#c8a800" stroke-width="1"/>
+  <text x="64" y="430" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#a07000">ACTIONS</text>
+  <text x="64" y="448" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">Download, signup, OTP, class, subjects, language</text>
+
+  <!-- RIGHT: Pain Points h=82 -->
+  <rect x="762" y="338" width="288" height="82" rx="7" fill="#ffe5e5" stroke="#d06060" stroke-width="1"/>
+  <text x="776" y="355" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#b03030">PAIN POINTS  ⚠ DROP-OFF RISK</text>
+  <text x="776" y="372" font-family="Arial,sans-serif" font-size="11" fill="#7a1a1a">Long signup, OTP delay,</text>
+  <text x="776" y="388" font-family="Arial,sans-serif" font-size="11" fill="#7a1a1a">unclear setup steps, no skip option</text>
+  <text x="776" y="410" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#c03030">⚠ DROP-OFF RISK</text>
+
+  <!-- RIGHT: Emotions h=56 -->
+  <rect x="762" y="428" width="288" height="56" rx="7" fill="#fde8d0" stroke="#c07020" stroke-width="1"/>
+  <text x="776" y="445" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#904000">EMOTIONS</text>
+  <text x="776" y="462" font-family="Arial,sans-serif" font-size="11" fill="#6a2a00">Hope quick → Many steps?</text>
+  <text x="776" y="478" font-family="Arial,sans-serif" font-size="11" fill="#6a2a00">→ Hinglish option</text>
+
+  <!-- ══════════════════════════════════════════
+       STAGE 3 — FIRST USE   (spine y=640)
+  ══════════════════════════════════════════ -->
+  <line x1="550" y1="422" x2="550" y2="618" stroke="#ccc" stroke-width="1.5"/>
+
+  <rect x="492" y="618" width="116" height="44" rx="8" fill="#fffde0" stroke="#c8a800" stroke-width="1.6"/>
+  <text x="550" y="645" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#5a4000">First Use</text>
+
+  <line x1="340" y1="640" x2="492" y2="640" stroke="#aaa" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="608" y1="640" x2="760" y2="640" stroke="#aaa" stroke-width="1" marker-end="url(#arr)"/>
+
+  <!-- LEFT: Touchpoints h=68 -->
+  <rect x="50" y="578" width="288" height="68" rx="7" fill="#fffde0" stroke="#c8a800" stroke-width="1"/>
+  <text x="64" y="595" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#a07000">TOUCHPOINTS</text>
+  <text x="64" y="612" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">Browser, chat, streaming response,</text>
+  <text x="64" y="628" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">summary, NCERT mapping</text>
+  <text x="64" y="641" font-family="Arial,sans-serif" font-size="11" fill="#5a4000"> </text>
+
+  <!-- LEFT: Actions h=56 -->
+  <rect x="50" y="654" width="288" height="56" rx="7" fill="#fffde0" stroke="#c8a800" stroke-width="1"/>
+  <text x="64" y="670" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#a07000">ACTIONS</text>
+  <text x="64" y="687" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">Browse Math, chapter, start,</text>
+  <text x="64" y="703" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">ask doubt, follow-up, summary</text>
+
+  <!-- RIGHT: Pain Points h=56 -->
+  <rect x="762" y="578" width="288" height="56" rx="7" fill="#ffe5e5" stroke="#d06060" stroke-width="1"/>
+  <text x="776" y="595" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#b03030">PAIN POINTS</text>
+  <text x="776" y="612" font-family="Arial,sans-serif" font-size="11" fill="#7a1a1a">Slow AI, hard to find chapter,</text>
+  <text x="776" y="628" font-family="Arial,sans-serif" font-size="11" fill="#7a1a1a">generic NCERT answer</text>
+
+  <!-- RIGHT: Emotions / Delight h=82 -->
+  <rect x="762" y="642" width="288" height="82" rx="7" fill="#d8f5e0" stroke="#4aaa6a" stroke-width="1"/>
+  <text x="776" y="659" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#1a6a3a">EMOTIONS  ✦ DELIGHT MOMENT</text>
+  <text x="776" y="676" font-family="Arial,sans-serif" font-size="11" fill="#0a4020">Found chapter → Hinglish works</text>
+  <text x="776" y="692" font-family="Arial,sans-serif" font-size="11" fill="#0a4020">→ Instant answer</text>
+  <rect x="776" y="704" width="80" height="13" rx="6" fill="#4aaa6a"/>
+  <text x="816" y="714" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#fff">DELIGHT</text>
+
+  <!-- ══════════════════════════════════════════
+       STAGE 4 — REGULAR USE   (spine y=880)
+  ══════════════════════════════════════════ -->
+  <line x1="550" y1="662" x2="550" y2="858" stroke="#ccc" stroke-width="1.5"/>
+
+  <rect x="484" y="858" width="132" height="44" rx="8" fill="#fffde0" stroke="#c8a800" stroke-width="1.6"/>
+  <text x="550" y="885" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#5a4000">Regular Use</text>
+
+  <line x1="340" y1="880" x2="484" y2="880" stroke="#aaa" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="616" y1="880" x2="760" y2="880" stroke="#aaa" stroke-width="1" marker-end="url(#arr)"/>
+
+  <!-- LEFT: Touchpoints h=82 -->
+  <rect x="50" y="818" width="288" height="82" rx="7" fill="#fffde0" stroke="#c8a800" stroke-width="1"/>
+  <text x="64" y="835" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#a07000">TOUCHPOINTS</text>
+  <text x="64" y="852" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">Home context, test, score,</text>
+  <text x="64" y="868" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">weak-topic analysis, practice,</text>
+  <text x="64" y="884" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">bookmark</text>
+  <text x="64" y="896" font-family="Arial,sans-serif" font-size="11" fill="#5a4000"> </text>
+
+  <!-- LEFT: Actions h=56 -->
+  <rect x="50" y="908" width="288" height="56" rx="7" fill="#fffde0" stroke="#c8a800" stroke-width="1"/>
+  <text x="64" y="924" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#a07000">ACTIONS</text>
+  <text x="64" y="941" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">Continue, new chapter, MCQ,</text>
+  <text x="64" y="957" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">score, weak topics, bookmark</text>
+
+  <!-- RIGHT: Pain Points h=82 -->
+  <rect x="762" y="818" width="288" height="82" rx="7" fill="#ffe5e5" stroke="#d06060" stroke-width="1"/>
+  <text x="776" y="835" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#b03030">PAIN POINTS  ⚠ DROP-OFF RISK</text>
+  <text x="776" y="852" font-family="Arial,sans-serif" font-size="11" fill="#7a1a1a">Hard test, unclear wrong answer,</text>
+  <text x="776" y="868" font-family="Arial,sans-serif" font-size="11" fill="#7a1a1a">no MCQ explanation</text>
+  <text x="776" y="890" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#c03030">⚠ DROP-OFF RISK</text>
+
+  <!-- RIGHT: Emotions / Delight h=82 -->
+  <rect x="762" y="908" width="288" height="82" rx="7" fill="#d8f5e0" stroke="#4aaa6a" stroke-width="1"/>
+  <text x="776" y="925" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#1a6a3a">EMOTIONS  ✦ DELIGHT MOMENT</text>
+  <text x="776" y="942" font-family="Arial,sans-serif" font-size="11" fill="#0a4020">Remembered → Tough → 70%</text>
+  <text x="776" y="958" font-family="Arial,sans-serif" font-size="11" fill="#0a4020">→ Practice more</text>
+  <rect x="776" y="970" width="80" height="13" rx="6" fill="#4aaa6a"/>
+  <text x="816" y="980" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#fff">DELIGHT</text>
+
+  <!-- ══════════════════════════════════════════
+       STAGE 5 — RE-ENGAGEMENT   (spine y=1140)
+  ══════════════════════════════════════════ -->
+  <line x1="550" y1="916" x2="550" y2="1118" stroke="#ccc" stroke-width="1.5"/>
+
+  <rect x="472" y="1118" width="156" height="44" rx="8" fill="#fffde0" stroke="#c8a800" stroke-width="1.6"/>
+  <text x="550" y="1145" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#5a4000">Re-engagement</text>
+
+  <line x1="340" y1="1140" x2="472" y2="1140" stroke="#aaa" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="628" y1="1140" x2="760" y2="1140" stroke="#aaa" stroke-width="1" marker-end="url(#arr)"/>
+
+  <!-- LEFT: Touchpoints h=56 -->
+  <rect x="50" y="1078" width="288" height="56" rx="7" fill="#fffde0" stroke="#c8a800" stroke-width="1"/>
+  <text x="64" y="1095" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#a07000">TOUCHPOINTS</text>
+  <text x="64" y="1112" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">Push, streak, voice, diagrams,</text>
+  <text x="64" y="1128" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">share, referral</text>
+
+  <!-- LEFT: Actions h=68 -->
+  <rect x="50" y="1142" width="288" height="68" rx="7" fill="#fffde0" stroke="#c8a800" stroke-width="1"/>
+  <text x="64" y="1159" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#a07000">ACTIONS</text>
+  <text x="64" y="1176" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">Open via notification, open app,</text>
+  <text x="64" y="1192" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">broken streak recovery,</text>
+  <text x="64" y="1204" font-family="Arial,sans-serif" font-size="11" fill="#5a4000">voice doubt, diagram, share</text>
+
+  <!-- RIGHT: Pain Points h=82 -->
+  <rect x="762" y="1078" width="288" height="82" rx="7" fill="#ffe5e5" stroke="#d06060" stroke-width="1"/>
+  <text x="776" y="1095" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#b03030">PAIN POINTS</text>
+  <text x="776" y="1112" font-family="Arial,sans-serif" font-size="11" fill="#7a1a1a">Notification fatigue,</text>
+  <text x="776" y="1128" font-family="Arial,sans-serif" font-size="11" fill="#7a1a1a">broken streak, hard history,</text>
+  <text x="776" y="1144" font-family="Arial,sans-serif" font-size="11" fill="#7a1a1a">no offline mode</text>
+  <text x="776" y="1152" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#c03030"> </text>
+
+  <!-- RIGHT: Emotions / Delight h=96 -->
+  <rect x="762" y="1168" width="288" height="96" rx="7" fill="#d8f5e0" stroke="#4aaa6a" stroke-width="1"/>
+  <text x="776" y="1185" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#1a6a3a">EMOTIONS  ✦ DELIGHT MOMENT</text>
+  <text x="776" y="1202" font-family="Arial,sans-serif" font-size="11" fill="#0a4020">Forgot → Reminder</text>
+  <text x="776" y="1218" font-family="Arial,sans-serif" font-size="11" fill="#0a4020">→ Lost streak → Voice easy</text>
+  <text x="776" y="1234" font-family="Arial,sans-serif" font-size="11" fill="#0a4020">→ Share</text>
+  <rect x="776" y="1246" width="80" height="13" rx="6" fill="#4aaa6a"/>
+  <text x="816" y="1256" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#fff">DELIGHT</text>
+
+  <!-- ══════════ END ══════════ -->
+  <line x1="550" y1="1162" x2="550" y2="1550" stroke="#ccc" stroke-width="1.5"/>
+  <rect x="485" y="1550" width="130" height="36" rx="18" fill="#c0f0d4" stroke="#5aaa7a" stroke-width="1.4"/>
+  <text x="550" y="1573" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#1a5c34">End</text>
+
+  <!-- ══════════ SUMMARY PANEL ══════════ -->
+  <rect x="30" y="1310" width="1040" height="220" rx="10" fill="#fff" stroke="#ddd" stroke-width="0.8"/>
+  <text x="52" y="1335" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#222">Journey summary</text>
+
+  <!-- pill flow -->
+  <rect x="52"  y="1348" width="140" height="26" rx="13" fill="#fffde0" stroke="#c8a800" stroke-width="1"/>
+  <text x="122" y="1366" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#5a4000">Awareness</text>
+  <line x1="192" y1="1361" x2="210" y2="1361" stroke="#bbb" stroke-width="1" marker-end="url(#arr)"/>
+
+  <rect x="212" y="1348" width="140" height="26" rx="13" fill="#fffde0" stroke="#c8a800" stroke-width="1"/>
+  <text x="282" y="1366" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#5a4000">Onboarding</text>
+  <line x1="352" y1="1361" x2="370" y2="1361" stroke="#bbb" stroke-width="1" marker-end="url(#arr)"/>
+
+  <rect x="372" y="1348" width="130" height="26" rx="13" fill="#fffde0" stroke="#c8a800" stroke-width="1"/>
+  <text x="437" y="1366" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#5a4000">First Use</text>
+  <line x1="502" y1="1361" x2="520" y2="1361" stroke="#bbb" stroke-width="1" marker-end="url(#arr)"/>
+
+  <rect x="522" y="1348" width="140" height="26" rx="13" fill="#fffde0" stroke="#c8a800" stroke-width="1"/>
+  <text x="592" y="1366" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#5a4000">Regular Use</text>
+  <line x1="662" y1="1361" x2="680" y2="1361" stroke="#bbb" stroke-width="1" marker-end="url(#arr)"/>
+
+  <rect x="682" y="1348" width="155" height="26" rx="13" fill="#fffde0" stroke="#c8a800" stroke-width="1"/>
+  <text x="760" y="1366" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#5a4000">Re-engagement</text>
+
+  <!-- 3-col info grid -->
+  <!-- col 1 -->
+  <text x="52"  y="1400" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#c03030">Drop-off risks</text>
+  <text x="52"  y="1418" font-family="Arial,sans-serif" font-size="11" fill="#555">Onboarding: long signup, no skip</text>
+  <text x="52"  y="1434" font-family="Arial,sans-serif" font-size="11" fill="#555">Regular use: no MCQ explanation</text>
+  <text x="52"  y="1450" font-family="Arial,sans-serif" font-size="11" fill="#555">Re-engagement: notification fatigue</text>
+  <!-- col 2 -->
+  <text x="400" y="1400" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#1a6a3a">Delight moments</text>
+  <text x="400" y="1418" font-family="Arial,sans-serif" font-size="11" fill="#555">First use: instant Hinglish answer</text>
+  <text x="400" y="1434" font-family="Arial,sans-serif" font-size="11" fill="#555">Regular use: 70%+ MCQ score</text>
+  <text x="400" y="1450" font-family="Arial,sans-serif" font-size="11" fill="#555">Re-engagement: voice doubt works</text>
+  <!-- col 3 -->
+  <text x="748" y="1400" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#333">User context</text>
+  <text x="748" y="1418" font-family="Arial,sans-serif" font-size="11" fill="#555">Students, Class 9–12</text>
+  <text x="748" y="1434" font-family="Arial,sans-serif" font-size="11" fill="#555">NCERT curriculum, Hinglish</text>
+  <text x="748" y="1450" font-family="Arial,sans-serif" font-size="11" fill="#555">Exam-driven motivation</text>
+
+  <line x1="52" y1="1468" x2="1050" y2="1468" stroke="#eee" stroke-width="1"/>
+  <text x="52" y="1486" font-family="Arial,sans-serif" font-size="10" fill="#bbb">App User Journey Map — 5 lifecycle stages: awareness → onboarding → first use → regular use → re-engagement</text>
+
+</svg>
